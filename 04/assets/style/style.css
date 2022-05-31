@@ -8,7 +8,7 @@ body {
 }
 
 section {
-    float: left;
+    /*float: left;*/
     width: 100%;
 }
 
@@ -141,7 +141,7 @@ header hr {
 .skills-list {
     width: 100%;
     margin: 0 auto;
-    float: left;
+    /*float: left;*/
 }
 
 .skill-item {
@@ -188,7 +188,7 @@ header hr {
 
 .portfolio-item {
     width: 100%;
-    float: left;
+    /*float: left;*/
     margin-bottom: 136px;
 }
 

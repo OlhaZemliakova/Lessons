@@ -1,0 +1,48 @@
+body {
+    font-size: 15px;
+    font-family: "OpenSans";
+    font-weight: 600;
+    color: #efefef;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 113px 37px;
+    background-color: #121116;
+    text-align: center;
+}
+
+.main h2 {
+    margin: 40px 0 20px;
+}
+
+.main hr {
+    max-width: 230px;
+    border-style: solid;
+}
+
+.icon {
+    padding: 18px;
+    margin-right: 19px;
+    display: inline-block;
+    max-width: 15px;
+    height: auto;
+}
+
+.icon:last-child {
+    margin-right: 0px;
+}
+
+.main p {
+    margin: 60px 0 auto;
+}
+
+.color-text {
+    color: #19c8fa;
+}
