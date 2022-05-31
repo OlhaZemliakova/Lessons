@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free lending page</title>
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
 <body>
     <header>
-        <div>
-            <nav>
+        <div class="container">
+            <nav class="main-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About me</a></li>
@@ -22,92 +24,78 @@
             </nav>
             <hr>
         </div>
-    </header>
-    <main>
-        <section id="home">
-            <div class="container">
-                <h1>Denis Novik</h1>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <img src="assets/images/denisNovik.jpg" alt="Denis Novik">
-            </div>
-        </section>
-        <section id="about">
-            <div class="container">
-                <h2>About me</h2>
-                <p>Hi, I'm Denis – UX/UI designer from Minsk.</p>
-                <p>I'm interested in design and everything connected with it.</p>
-                <p>I'm studying at courses "Web and mobile design</p>
-                <p>interfaces" in IT-Academy.</p>
-                <p>Ready to implement excellent projects</p>
-                <p>with wonderful people.</p>
-            </div>
-        </section>
-        <section id="skills">
-            <div class="conteiner">
-                <h2>Skills</h2>
-                <p>I work in such programs as</p>
-                <div>
-                    <img src="assets/images/photoshop.png" alt="photoshop">
-                    <p>Adobe</p>
-                    <p>Photoshop</p>
-                    <img src="assets/images/four-stars.png" alt="four stars">
+        </header>
+        <main>
+            <section id="home">
+                <div class="container">
+                    <h1 class="title">Denis Novik</h1>
+                    <img src="assets/images/denisNovik.jpg" alt="Denis Novik">
                 </div>
-                <div>
-                    <img src="assets/images/illustrator.png" alt="illustrator">
-                    <p>Adobe</p>
-                    <p>Illustrator</p>
-                    <img src="assets/images/three-stars.png" alt="three stars">
+            </section>
+            <section id="about" class="grey-bg">
+                <div class="container">
+                    <h2 class="title">About me</h2>
+                    <div class="about-story">
+                        <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with
+                            it.</p>
+                        <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                        <p>Ready to implement excellent projects with wonderful people.</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/images/after-effects.png" alt="after effects">
-                    <p>Adobe</p>
-                    <p>After Effects</p>
-                    <img src="assets/images/four-stars.png" alt="four stars">
+            </section>
+            <section id="skills">
+                <div class="container">
+                    <h2 class="title">Skills</h2>
+                    <p class="subtitle">I work in such programs as</p>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img class="icon" src="assets/images/photoshop.png" alt="photoshop">
+                            <p>Adobe Photoshop</p>
+                            <img class="rating" src="assets/images/four-stars.png" alt="four stars">
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="assets/images/illustrator.png" alt="illustrator">
+                            <p>Adobe Illustrator</p>
+                            <img class="rating" src="assets/images/three-stars.png" alt="three stars">
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="assets/images/after-effects.png" alt="after effects">
+                            <p>Adobe After Effects</p>
+                            <img class="rating" src="assets/images/four-stars.png" alt="four stars">
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="assets/images/figma.png" alt="figma">
+                            <p>Figma</p>
+                            <img class="rating" src="assets/images/four-stars.png" alt="four stars">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/images/figma.png" alt="figma">
-                    <p>Figma</p>
-                    <img src="assets/images/four-stars.png" alt="four stars">
+            </section>
+            <section id="portfolio" class="grey-bg">
+                <div class="container">
+                    <h2 class="title">Portfolio</h2>
+                    <div class="portfolio-item">
+                        <img src="assets/images/hew-collection.png" alt="fashion store">
+                        <p>Online fashion store - Homepage</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/reebok_web.png" alt="Reebok Store">
+                        <p>Reebok Store - Concept</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/images/braun.png" alt="Braun Landing Page">
+                        <p>Braun Landing Page - Concept</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="portfolio">
-            <div class="conteiner">
-                <h2>Portfolio</h2>
-                <div>
-                    <img src="assets/images/hew-collection.png" alt="fashion store">
-                </div>
-                <div>
-                    <p>Online fashion store -</p>
-                    <p>Homepage</p>
-                </div>
-                <div>
-                    <img src="assets/images/reebok_web.png" alt="Reebok Store">
-                </div>
-                <div>
-                    <p>Reebok Store - Concept</p>
-                </div>
-                <div>
-                    <img src="assets/images/braun.png" alt="Braun Landing Page">
-                </div>
-                <div>
-                    <p>Braun Landing Page - Concept</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section id="contacts">
+            </section>
+        </main>
+        <footer id="contacts">
             <div class="container">
                 <div>
-                    <h2>Contacts</h2>
-                    <p>Want to know more or just chat?</p>
-                    <p>You are welcome!</p>
+                    <h2 class="title">Contacts</h2>
+                    <p class="subtitle">Want to know more or just chat? You are welcome!</p>
                 </div>
-                <a class="batton" href="#">Send message</a>
+                <a class="button" href="#">Send message</a>
                 <div class="socials">
                     <a href="#" target="_blank" rel="noindex nofollow noreferrer">
                         <img src="assets/images/linkedin.png" alt="linkedin">
@@ -124,11 +112,9 @@
                 </div>
             </div class="social-info">
             <p>Like me on</p>
-            <p>LinkedIn, Instagram, Behance,</p>
-            <p>Dribble</p>
+            <p>LinkedIn, Instagram, Behance, Dribble</p>
             </div>
-        </section>
-    </footer>
+        </footer>
 </body>
 
 </html>
