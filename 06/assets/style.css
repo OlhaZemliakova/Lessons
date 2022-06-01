@@ -1,7 +1,6 @@
 body {
-    font-size: 15px;
     font-family: "OpenSans";
-    font-weight: 600;
+    font-weight: 400;
     color: #efefef;
 
 }
@@ -20,11 +19,13 @@ body {
 
 .main h2 {
     margin: 40px 0 20px;
+    font-size: 20px;
 }
 
 .main hr {
     max-width: 230px;
     border-style: solid;
+    margin: 0 auto;
 }
 
 .icon {
@@ -41,6 +42,7 @@ body {
 
 .main p {
     margin: 60px 0 auto;
+    font-size: 15px;
 }
 
 .color-text {
