@@ -8,7 +8,6 @@ body {
 }
 
 section {
-    /*float: left;*/
     width: 100%;
 }
 
@@ -49,6 +48,7 @@ header {
 
 .main-menu {
     padding-bottom: 29px;
+    filter: drop-shadow(0px 4px 4px);
 }
 
 .main-menu ul li {
@@ -141,13 +141,12 @@ header hr {
 .skills-list {
     width: 100%;
     margin: 0 auto;
-    /*float: left;*/
 }
 
 .skill-item {
-    float: left;
     width: 167px;
     margin-right: 69px;
+    display: inline-block;
 }
 
 .skill-item:last-child {
@@ -188,7 +187,6 @@ header hr {
 
 .portfolio-item {
     width: 100%;
-    /*float: left;*/
     margin-bottom: 136px;
 }
 
@@ -231,6 +229,7 @@ footer .subtitle {
 .socials a {
     margin-right: 61px;
     width: 40px;
+    text-decoration: none;
 }
 
 .socials a:last-child {
@@ -254,9 +253,8 @@ footer .subtitle {
 }
 
 footer p { 
-
-    padding-top: 44px;
     color: #828282;
     line-height: 19px;
     text-align: center;
+    padding-top: 44px;
 }
