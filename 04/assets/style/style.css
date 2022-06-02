@@ -48,7 +48,7 @@ header {
 
 .main-menu {
     padding-bottom: 29px;
-    filter: drop-shadow(0px 4px 4px);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .main-menu ul li {
@@ -224,37 +224,41 @@ footer .subtitle {
     margin: 0 auto;
     width: 275px;
     color: #070707;
+    margin-bottom: 78px;
+}
+
+.socials {
+    margin-bottom: 31px;
 }
 
 .socials a {
     margin-right: 61px;
-    width: 40px;
-    text-decoration: none;
 }
 
 .socials a:last-child {
     margin-right: 0;
 }
 
+.socials a img {
+    width: 40px;
+}
+
 .button {
     background-color: #070707;
     border: none;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    width: 166px;
-    height: 38px;
     font-size: 18px;
-    margin-top: 86px;
-    margin-bottom: 46px;
-    line-height: 38px;
+    margin-bottom: 37px;
+    line-height: 25px;
+    padding: 8px 20px;
 }
 
-footer p { 
+p.social-info { 
     color: #828282;
     line-height: 19px;
     text-align: center;
-    padding-top: 44px;
 }
