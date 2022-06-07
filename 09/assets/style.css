@@ -1,0 +1,92 @@
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    color: #000000;
+}
+
+header .header-block {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    vertical-align: middle;
+    margin-bottom: 70px;
+}
+
+header p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+header nav {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    display: inline-block;
+    margin-right: 600px;
+    vertical-align: middle;
+}
+header nav span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main h2 {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+main .main-content {
+    margin-bottom: 70px;
+}
+main small {
+    font-family: 'Farro', sans-serif;
+    vertical-align: top;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+main p {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+
+p .underline {
+    text-decoration: underline;
+}
+
+p .italic {
+    font-style: italic;
+}
+.background-grey {
+    background-color: rgb(216, 213, 213);
+}
+
+p strong {
+    font-weight: 700;
+}
+
+.paragraph {
+    padding-bottom: 40px;
+}
