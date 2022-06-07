@@ -1,0 +1,58 @@
+.container {
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header {
+    background-color: #4A4F56;
+    text-align: center;
+    font-family: Roboto;
+    color: #FF8984;
+}
+
+header h1 {
+    width: 700;
+    font-size: 24px;
+    line-height: 28px
+}
+
+header p {
+    width: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+/*main*/
+
+main {
+    background-color:#3B3F45;
+    color:#FFFFFF;
+    font-family: Roboto;
+    width: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.form_fields {
+    position: relative;
+}
+
+.form_fields input {
+    opacity: 0;
+    position: absolute;
+}
+
+main button {
+    color: #FF8984;
+    background-color: #4A4F56;
+    width: 534px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #4A4F56;
+    display: inline-block;
+    padding-top: 12px 223px 12px 204px;
+}
