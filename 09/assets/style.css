@@ -1,20 +1,47 @@
+body {
+    color: #000000;
+}
+
+header {
+    width: 100%;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+
+
+.background-grey {
+    background-color: rgb(216, 213, 213);
+}
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
 }
 
-body {
-    color: #000000;
-}
 
 header .header-block {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    vertical-align: middle;
+    padding-top: 13px;
+    padding-bottom: 13px;
     margin-bottom: 70px;
 }
 
-header p {
+header .lang {
     display: inline-block;
     vertical-align: middle;
     margin-right: 50px;
@@ -33,60 +60,64 @@ header nav {
     margin-right: 600px;
     vertical-align: middle;
 }
-header nav span {
+
+header nav ul {
+    list-style: none;
+}
+
+
+header nav ul li {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 10px;
 }
+
+header nav ul li::after {
+    content: "/";
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header nav ul li:last-child {
+    margin-left: 0;
+}
+
+header nav ul li:last-child::after{
+    content: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
 
 header .logo {
     display: inline-block;
     vertical-align: middle;
 }
 
-main h2 {
+h2 {
     font-family: 'Francois One';
     font-weight: 400;
     font-size: 36px;
     line-height: 48px;
     text-transform: uppercase;
-    padding-bottom: 40px;
+    letter-spacing: 0.04em;
+    display: inline-block;
 }
 
-main .main-content {
-    margin-bottom: 70px;
+
+.title {
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
-main small {
+
+.chapter {
     font-family: 'Farro', sans-serif;
     vertical-align: top;
     font-weight: 300;
     font-size: 15px;
     text-transform: capitalize;
-}
-
-main p {
-    font-family: 'PT Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-}
-
-
-p .underline {
-    text-decoration: underline;
-}
-
-p .italic {
-    font-style: italic;
-}
-.background-grey {
-    background-color: rgb(216, 213, 213);
-}
-
-p strong {
-    font-weight: 700;
-}
-
-.paragraph {
-    padding-bottom: 40px;
+    display: inline-block;
 }
