@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="form">
+            <div class="container bg-white">
+                <h2>Create an Account</h2>
+                <form id="user-data">
+                    <div class="row">
+                        <div class="col-half">
+                            <label form="user-data" class="label" for="first-name">First Name</label>
+                            <input type="text" id="first-name">
+                        </div>
+                        <div class="col-half">
+                            <label form="user-data" for="lasst-name" class="label">Last Name</label>
+                            <input type="text" id="lasst-name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-full">
+                            <label form="user-data" for="email-input" class="label">E-mail</label>
+                            <input type="email" id="email-input">
+                            <span class="form-text">We'll never share your email with anyone else.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-full">
+                            <label class="container-gender">Male
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-gender">Female
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-half">
+                            <label for="countries" class="label">Country</label>
+                            <select id="countries">
+                                <option value="0">Select</option>
+                                <option value="1">England</option>
+                                <option value="2">Latvia</option>
+                                <option value="3">Poland</option>
+                                <option value="4">USA</option>
+                            </select>
+                        </div>
+                        <div class="col-half">
+                            <label for="city" class="label">City</label>
+                            <input type="text" id="city">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit">Sign up</button>
+                    </div>
+                    <div class="row flex-center">
+                        <div class="terms">
+                            <p>By clicking the 'Sign Up' button, you confirm that you accept our
+                                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                            </p>
+                            <hr>
+                            <p class="dark-grey">Have an account? <a href="#">Log In</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
