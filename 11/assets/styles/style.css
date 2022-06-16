@@ -74,8 +74,10 @@ input {
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
+}
 
-
+input:focus {
+    border-color: #007BFF;
 }
 
 .container-gender {
