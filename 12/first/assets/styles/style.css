@@ -106,21 +106,15 @@ header .logo {
 }
 
 
-.background-image {
+.background-img {
     height: 760px;
     width: 760px;
     top: 150px;
-    left: 900px;
+    right: 300px;
     position: fixed;
     z-index: -1;
 }
 
-.menu {
-    width: 365px;
-    margin: 10px 10px 70px 10px;
-    padding-bottom: 9px;
-    border-bottom: 1px solid #BDBDBD;
-}
 
 .side-bar {
     position: sticky;
@@ -131,6 +125,7 @@ header .logo {
 .side-bar a {
     text-decoration: none;
     color: #000000;
+    border-bottom: 1px solid #BDBDBD;
 }
 
 
@@ -150,6 +145,16 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     display: inline-block;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    width: 100px;
+    height: 8px;
+    background-color: #000000;
+    position: absolute;
+    top: -20px;
 }
 
 
