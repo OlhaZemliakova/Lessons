@@ -1,0 +1,168 @@
+body {
+    color: #000000;
+}
+
+header {
+    width: 100%;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+
+
+.background-grey {
+    background-color: rgb(216, 213, 213);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+header .header-block {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 70px;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    background-color: #ffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .lang {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+header nav {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    display: inline-block;
+    margin-right: 600px;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+header nav ul li::after {
+    content: "/";
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header nav ul li:last-child {
+    margin-left: 0;
+}
+
+header nav ul li:last-child::after {
+    content: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+header .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.background-image {
+    height: 760px;
+    width: 760px;
+    top: 150px;
+    left: 900px;
+    position: fixed;
+    z-index: -1;
+}
+
+.menu {
+    width: 365px;
+    margin: 10px 10px 70px 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.side-bar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 70px;
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.divider {
+    width: 100px;
+    height: 8px;
+    background-color: #000000;
+    margin-bottom: 20px;
+    border: none;
+}
+
+h2 {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: inline-block;
+}
+
+
+.title {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.chapter {
+    font-family: 'Farro', sans-serif;
+    vertical-align: top;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: inline-block;
+}
