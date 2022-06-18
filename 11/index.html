@@ -26,29 +26,29 @@
                 <form id="user-data">
                     <div class="row">
                         <div class="col-half">
-                            <label form="user-data" class="label" for="first-name">First Name</label>
-                            <input type="text" id="first-name">
+                            <label class="label" for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
                         <div class="col-half">
-                            <label form="user-data" for="lasst-name" class="label">Last Name</label>
-                            <input type="text" id="lasst-name">
+                            <label for="lasst-name" class="label">Last Name</label>
+                            <input type="text" id="lasst-name" name="lasst-name" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-full">
-                            <label form="user-data" for="email-input" class="label">E-mail</label>
-                            <input type="email" id="email-input">
+                            <label for="email-input" class="label">E-mail</label>
+                            <input type="email" id="email-input" name="email-input" required>
                             <span class="form-text">We'll never share your email with anyone else.</span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-full">
                             <label class="container-gender">Male
-                                <input type="radio" checked="checked" name="radio">
+                                <input type="radio" checked="checked" name="radio" value="male" required>
                                 <span class="checkmark"></span>
                             </label>
                             <label class="container-gender">Female
-                                <input type="radio" name="radio">
+                                <input type="radio" name="radio" value="femele" required>
                                 <span class="checkmark"></span>
                             </label>
                         </div>
@@ -66,19 +66,21 @@
                         </div>
                         <div class="col-half">
                             <label for="city" class="label">City</label>
-                            <input type="text" id="city">
+                            <input type="text" id="city" name="city" required>
                         </div>
                     </div>
                     <div class="row">
                         <button type="submit">Sign up</button>
                     </div>
-                    <div class="row flex-center">
+                    <div class="row column-center">
                         <div class="terms">
                             <p>By clicking the 'Sign Up' button, you confirm that you accept our
                                 <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
                             </p>
-                            <hr>
-                            <p class="dark-grey">Have an account? <a href="#">Log In</a></p>
+                        </div>
+                        <hr>
+                        <div class="login">
+                            <p>Have an account? <a href="#">Log In</a></p>
                         </div>
                     </div>
                 </form>
