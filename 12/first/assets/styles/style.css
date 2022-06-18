@@ -1,48 +1,30 @@
 body {
     color: #000000;
-}
-
-header {
-    width: 100%;
-}
-
-p {
-    font-family: 'PT Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 48px;
-    margin-bottom: 40px;
-}
-
-
-strong {
-    font-weight: 700;
-}
-
-i {
-    font-style: italic;
-}
-
-
-.background-grey {
-    background-color: rgb(216, 213, 213);
+    /* option 1 for background image*/
+    background-image: url("../images/bg-picture.png") ;
+    background-repeat: no-repeat;
+    background-position: 100% 150px;
+    background-attachment: fixed;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    width: 1200px;
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #ffff;
+    width: 100%;
 }
 
 
 header .header-block {
     padding-top: 13px;
     padding-bottom: 13px;
-    margin-bottom: 70px;
-    position: fixed;
-    z-index: 998;
-    top: 0;
-    background-color: #ffff;
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,36 +87,52 @@ header .logo {
     vertical-align: middle;
 }
 
+.wrapper {
+    display: flex;
+}
 
+/* option 1 for background image*/
 .background-img {
-    height: 760px;
-    width: 760px;
     top: 150px;
-    right: 300px;
+    right: 0px;
     position: fixed;
     z-index: -1;
 }
 
 
-.side-bar {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 70px;
+aside {
+    width: 32%;
 }
 
-.side-bar a {
+aside nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 140px;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside li {
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+
+aside a {
     text-decoration: none;
     color: #000000;
     border-bottom: 1px solid #BDBDBD;
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
-
-.divider {
-    width: 100px;
-    height: 8px;
-    background-color: #000000;
-    margin-bottom: 20px;
-    border: none;
+main {
+    width: calc(68% - 38px);
 }
 
 h2 {
@@ -155,6 +153,29 @@ h2::before {
     background-color: #000000;
     position: absolute;
     top: -20px;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+
+
+.background-grey {
+    background-color: rgb(216, 213, 213);
 }
 
 
