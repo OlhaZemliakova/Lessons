@@ -1,0 +1,194 @@
+body {
+    color: #000000;
+    /* option 1 for background image*/
+    background-image: url("../images/bg-picture.png") ;
+    background-repeat: no-repeat;
+    background-position: 100% 150px;
+    background-attachment: fixed;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #ffff;
+    width: 100%;
+}
+
+
+header .header-block {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .lang {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+header nav {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    display: inline-block;
+    margin-right: 600px;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+header nav ul li::after {
+    content: "/";
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header nav ul li:last-child {
+    margin-left: 0;
+}
+
+header nav ul li:last-child::after {
+    content: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+header .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* option 1 for background image*/
+.background-img {
+    top: 150px;
+    right: 0px;
+    position: fixed;
+    z-index: -1;
+}
+
+
+aside {
+    width: 32%;
+}
+
+aside nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 140px;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside li {
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid #BDBDBD;
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+main {
+    width: calc(68% - 38px);
+}
+
+h2 {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: inline-block;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    width: 100px;
+    height: 8px;
+    background-color: #000000;
+    position: absolute;
+    top: -20px;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+
+
+.background-grey {
+    background-color: rgb(216, 213, 213);
+}
+
+
+.title {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.chapter {
+    font-family: 'Farro', sans-serif;
+    vertical-align: top;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: inline-block;
+}
