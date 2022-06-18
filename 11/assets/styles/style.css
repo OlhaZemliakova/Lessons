@@ -182,12 +182,14 @@ form button {
     width: 410px;
     text-align: center;
     color: #969696;
+    margin-bottom: 20px;
 }
 
 .terms p {
     font-family: 'Roboto';
     font-size: 13px;
-
+    font-weight: 400;
+    line-height: 18px;
 
 }
 
@@ -196,7 +198,7 @@ hr {
     width: 100%;
     border: 0;
     height: 1px;
-
+    margin-bottom: 20px;
 }
 
 .login {
