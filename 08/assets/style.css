@@ -25,14 +25,13 @@ header p {
     line-height: 19px;
 }
 
-
 /*main*/
 
 .container {
     max-width: 534px;
     margin: 0 auto;
     width: 100%;
-}   
+}
 
 
 main {
@@ -84,7 +83,7 @@ main {
     width: 0;
 }
 
-.container-check input:checked ~ .label-text {
+.container-check input:checked~.label-text {
     text-decoration: line-through;
     color: #9B96AC;
 }
