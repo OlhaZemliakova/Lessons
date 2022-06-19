@@ -1,6 +1,5 @@
-.container {
-    max-width: 534px;
-    margin: 0 auto;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /*header*/
@@ -8,41 +7,120 @@
 header {
     background-color: #4A4F56;
     text-align: center;
-    font-family: Roboto;
     color: #FF8984;
+    padding-top: 19px;
+    padding-bottom: 12px;
 }
 
 header h1 {
-    width: 700;
+    font-weight: 700;
     font-size: 24px;
-    line-height: 28px
+    line-height: 28px;
+    margin-bottom: 4px;
 }
 
 header p {
-    width: 400;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
 
-
 /*main*/
 
+.container {
+    max-width: 534px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
 main {
-    background-color:#3B3F45;
-    color:#FFFFFF;
-    font-family: Roboto;
-    width: 400;
+    background-color: #3B3F45;
+    color: #FFFFFF;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21.09px;
+    height: calc(100vh - 82px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    background: #88839E;
+}
+
+.form_fields:nth-child(even) {
+    background: #7A7593;
 }
 
 .form_fields {
     position: relative;
 }
 
-.form_fields input {
-    opacity: 0;
+.form_fields:hover {
+    background: #625E77;
+    box-shadow: inset 0 3px #fff, inset 0 -3px #fff;
+}
+
+
+.container-check {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    padding: 12px;
+    align-items: center;
+}
+
+
+.container-check input {
     position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container-check input:checked~.label-text {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+/* .form_fields input:checked ~ .container-check {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+} */
+
+.checkmark {
+    height: 19px;
+    width: 19px;
+    background-color: #FFFFFF;
+    margin-right: 16px;
+}
+
+.container-check input:checked~.checkmark {
+    background-color: #FFFFFF;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container-check input:checked~.checkmark:after {
+    display: block;
+}
+
+.container-check .checkmark::after {
+    background-image: url(../assets/images/check.svg);
+    height: 19px;
+    width: 19px;
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main button {
@@ -54,5 +132,5 @@ main button {
     line-height: 45px;
     border: 1px solid #4A4F56;
     display: inline-block;
-    padding-top: 12px 223px 12px 204px;
+    margin-top: 45px;
 }
