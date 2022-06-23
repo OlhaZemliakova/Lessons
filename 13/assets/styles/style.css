@@ -1,0 +1,255 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #3C3C3C;
+    ;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.logo__site {
+    width: 170px;
+    height: 60px;
+}
+
+.nav__menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav__menu ul li a {
+    text-decoration: none;
+    color: #3C3C3C;
+    text-transform: uppercase;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.nav__menu ul li a:hover {
+    color: #18B5DC;
+}
+
+.header__button {
+    background: #FFFFFF;
+    border: 1px solid #3C3C3C;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #3C3C3C;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__button:hover {
+    background: #18B5DC;
+    border: 1px solid #18B5DC;
+    color: #FFFFFF;
+}
+
+main {
+    background: #F6F6F6;
+    width: 100%;
+}
+
+.main-block {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.main-block__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main-block__content h2 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px
+}
+
+.main-block__content h2::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    background-color: #DDDBDB;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.main-block__content p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.main-block__items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card {
+    width: 270px;
+    height: 270px;
+    perspective: 1000px;
+    display: flex;
+    position: relative;
+}
+
+.card__front, .card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+
+.card__back {
+    background-color: #18B5DC;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__back img {
+    margin-right: 4px;
+}
+
+.card__back img:last-child {
+    margin-right: 0;
+}
+
+.card:hover .card__front {transform: rotateY(180deg);}
+.card:hover .card__back {transform: rotateY(360deg);}
+
+
+.back {
+    width: 42px;
+    height: 42px;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back__socials-front, .back__socials-back {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.back__socials-back {
+    transform: rotateY(180deg);
+}
+
+.back:hover .back__socials-front {transform: rotateY(180deg);}
+.back:hover .back__socials-back {transform: rotateY(360deg);}
+
+
+.item__descridtion {
+    margin-top: 20px;
+}
+
+.item__descridtion h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #282528;
+    ;
+}
+
+.item__descridtion p {
+    font-weight: 300;
+    color: #646464;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+
+.footer__nav {
+    margin-top: 36px;
+    margin-bottom: 28px;
+}
+
+.footer__socials {
+    display: flex;
+}
+
+.socials__icon {
+    margin-right: 10px;
+}
+
+.socials__icon:last-child {
+    margin-right: 0;
+}
+
+.footer__nav ul li a {
+    font-size: 18px;
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    perspective: 1000px;
+    display: flex;
+    position: relative;
+}
+
+.icon__front, .icon__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.icon__back {
+    transform: rotateY(180deg);
+}
+
+.icon:hover .icon__front {transform: rotateY(180deg);}
+.icon:hover .icon__back {transform: rotateY(360deg);}
+
