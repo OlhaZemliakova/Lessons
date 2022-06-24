@@ -1,0 +1,8 @@
+.header {
+    border-bottom: 1px solid #EFEEF3;
+}
+
+.header__container, .main__container, .footer__container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
