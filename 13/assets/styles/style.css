@@ -128,7 +128,8 @@ main {
     position: relative;
 }
 
-.card__front, .card__back {
+.card__front,
+.card__back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -136,6 +137,13 @@ main {
     backface-visibility: hidden;
 }
 
+.card:hover .card__front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card__back {
+    transform: rotateY(360deg);
+}
 
 .card__back {
     background-color: #18B5DC;
@@ -153,33 +161,34 @@ main {
     margin-right: 0;
 }
 
-.card:hover .card__front {transform: rotateY(180deg);}
-.card:hover .card__back {transform: rotateY(360deg);}
-
-
-.back {
-    width: 42px;
-    height: 42px;
-    perspective: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card__back a {
+    position: relative;
 }
 
-.back__socials-front, .back__socials-back {
-    width: 100%;
-    height: 100%;
-    transition: 1s;
+.front-social {
+    display: block;
+    transition: 0.5s;
     backface-visibility: hidden;
 }
 
-.back__socials-back {
+.front-social:hover {
     transform: rotateY(180deg);
 }
 
-.back:hover .back__socials-front {transform: rotateY(180deg);}
-.back:hover .back__socials-back {transform: rotateY(360deg);}
 
+.front-social:hover + .back-social {
+    transform: rotateY(360deg);
+}
+
+.back-social {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
 
 .item__descridtion {
     margin-top: 20px;
@@ -190,7 +199,6 @@ main {
     font-size: 18px;
     line-height: 22px;
     color: #282528;
-    ;
 }
 
 .item__descridtion p {
@@ -238,7 +246,8 @@ main {
     position: relative;
 }
 
-.icon__front, .icon__back {
+.icon__front,
+.icon__back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -250,6 +259,8 @@ main {
     transform: rotateY(180deg);
 }
 
-.icon:hover .icon__front {transform: rotateY(180deg);}
+.icon:hover .icon__front {
+    transform: rotateY(180deg);
+}
 .icon:hover .icon__back {transform: rotateY(360deg);}
 
