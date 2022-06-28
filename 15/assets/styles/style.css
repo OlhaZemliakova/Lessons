@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7yhaqs');
+    src: url('../fonts/icomoon.eot?7yhaqs#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7yhaqs') format('truetype'),
+        url('../fonts/icomoon.woff?7yhaqs') format('woff'),
+        url('../fonts/icomoon.svg?7yhaqs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spades:before {
+    content: "\e917";
+    color: black;
+}
+
+.icon-clubs:before {
+    content: "\e918";
+    color: black;
+}
+
+.icon-diamonds:before {
+    content: "\e919";
+    color: red;
+}
+
+.icon-heart:before {
+    content: "\e9da";
+    color: red;
+}
+
+.small-icon {
+    font-size: 20px;
+}
+
+.big-icon {
+    font-size: 46px;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container__items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.items__wraper {
+    perspective: 1000px;
+    position: relative;
+    width: 150px;
+    height: 200px;
+}
+
+.wraper__card-back {
+    width: 130px;
+    height: 180px;
+    background-color: rgb(191, 214, 191);
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card-back__middle {
+    background-color: rgb(51, 98, 218);
+    width: 115px;
+    height: 165px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.wraper__front {
+    width: 130px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(248, 244, 239);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.front__corner-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.front__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front__corner-rotate {
+    display: flex;
+    justify-content: start;
+    transform: rotate(180deg);
+}
+
+.wraper__card-back,
+.wraper__front {
+    position: absolute;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.items__wraper:hover .wraper__card-back {
+    transform: rotateY(180deg);
+}
+
+.items__wraper:hover .wraper__front {
+    transform: rotateY(360deg);
+}
+
+.wraper__front {
+    transform: rotateY(180deg);
+}
