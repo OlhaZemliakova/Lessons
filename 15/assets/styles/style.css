@@ -48,12 +48,20 @@
 
 .small-icon {
     font-size: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .big-icon {
     font-size: 46px;
 }
 
+.front-el {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
 
 .container {
     width: 1200px;
@@ -140,3 +148,4 @@
 .wraper__front {
     transform: rotateY(180deg);
 }
+
