@@ -189,9 +189,9 @@
      width: 100%;
  }
 
-.blog {
-    margin-bottom: 90px;
-}
+ .blog {
+     margin-bottom: 90px;
+ }
 
  .article-blog {
      margin-bottom: 50px;
@@ -217,11 +217,11 @@
      margin-bottom: 50px;
  }
 
- .lates-posts {
+ .latest-posts {
      margin-bottom: 90px;
  }
 
- .lates-posts article .description .meta {
+ .latest-posts article .description .meta {
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -229,7 +229,7 @@
      margin: 25px 0 25px;
  }
 
- .lates-posts article .description .title {
+ .latest-posts article .description .title {
      margin-bottom: 20px;
  }
 
@@ -297,6 +297,11 @@
      font-size: 16px;
      font-weight: 700;
      text-decoration: none;
+     transition: 0.3s;
+ }
+
+ .flex-center .button:hover {
+     background: #323232;
  }
 
  .info .position {
@@ -469,26 +474,36 @@
          max-width: 100%;
      }
 
+     .mb-md-30 {
+         margin-bottom: 30px;
+     }
+
      .content {
          align-items: center;
          flex-direction: column;
      }
 
      .content .content__contacts {
-        align-items: center;
+         align-items: center;
+     }
+
+     .flex-end .about {
+         margin-top: 50px;
+         width: 100%;
+         text-align: right;
      }
 
      footer {
-        padding: 50px 0;
-    }
+         padding: 50px 0;
+     }
 
-    .content__contacts h2 {
-        margin-bottom: 51px;
-    }
+     .content__contacts h2 {
+         margin-bottom: 51px;
+     }
 
-    .copyright {
-        margin-top: 40px;
-    }
+     .copyright {
+         margin-top: 40px;
+     }
 
  }
 
@@ -509,16 +524,47 @@
          font-size: 30px;
      }
 
+     .blog h2 {
+         text-align: center;
+     }
+
      h4 {
          font-size: 22px;
+     }
+
+     .blog article .description {
+         margin-bottom: 37px;
      }
 
      .blog article .description .title {
          margin-bottom: 10px;
      }
 
+     .block-header {
+         flex-direction: column;
+     }
+
      .col-sm-12 {
          max-width: 100%;
          flex-shrink: 0;
      }
+
+     .mb-sm-50 {
+         margin-bottom: 50px;
+     }
+
+     .col-sm-reverse {
+         flex-direction: column-reverse;
+     }
+
+     .row-reverse .content-end {
+         justify-content: start;
+     }
+
+     .flex-end .about {
+         margin-top: 35px;
+         width: 100%;
+         text-align: start;
+     }
+
  }
