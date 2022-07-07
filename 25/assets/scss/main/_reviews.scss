@@ -1,0 +1,50 @@
+@import '../partials/variables';
+@import '../partials/mixins';
+
+.reviews {
+    background-image: url("../assets/images/reviews.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    max-height: 708px;
+    padding: 120px 0 180px;
+
+    h2 {
+        @include aleo-title;
+        color: $white;
+    }
+
+    & .row {
+        width: 100%;
+        display: flex;
+    }
+
+    .col-xl-4 {
+        width: 34%;
+        max-width: 380px;
+    }
+
+    .col-xl-8 {
+        width: 66%;
+        max-width: 640px;
+
+        h3 {
+            @include font-josefin;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        p {
+            @include text;
+        }
+
+    }
+
+    &__bg {
+        background-color: $grey;
+    }
+
+}

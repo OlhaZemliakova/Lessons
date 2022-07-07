@@ -1,0 +1,35 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include brakepoint($lg) {
+        max-width: 960px;
+    }
+
+    @include brakepoint($md) {
+        max-width: 720px;
+    }
+
+    @include brakepoint($sm) {
+        max-width: 540px;
+    }
+}
+
+.row {
+    width: 100%;
+    display: flex;
+
+    &__reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.col- {
+    &xl-6 {
+        width: 50%;
+    }
+}

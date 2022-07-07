@@ -1,0 +1,43 @@
+@import '../partials/variables';
+@import '../partials/mixins';
+
+.steps {
+    background-color: $grey;
+    padding: 81px 0 44px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__line {
+        max-width: 752px;
+        align-self: center;
+    }
+
+    &__wraper {
+        @include flex-cen;
+        justify-content: space-between;
+    }
+
+    & .steps-item {
+        @include flex-cen;
+        flex-direction: column;
+        width: 33%;
+
+        img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 4px;
+            // border: 1px solid $grey;
+            // background-color: $grey;
+            // width: 96px;
+            // height: 96px;
+        }
+
+        p {
+            @include aleo-title;
+            color: $white;
+        }
+    }
+}

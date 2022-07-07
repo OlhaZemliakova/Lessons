@@ -1,0 +1,40 @@
+@import '../partials/variables';
+@import '../partials/mixins';
+
+.footer {
+    background-color: $black;
+
+    .container {
+        @include flex-cen;
+        flex-direction: column;
+        padding: 80px 0;
+    }
+
+    h2 {
+        @include name;
+        margin-bottom: 8px;
+    }
+
+    p {
+        color: $white;
+        @include font-josefin;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        margin-bottom: 22px;
+    }
+
+    &__nav ul li {
+        display: inline-block;
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        & a:hover svg path {
+            fill: $blue;
+        }
+    }
+}

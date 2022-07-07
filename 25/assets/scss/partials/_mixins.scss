@@ -1,0 +1,85 @@
+@mixin font-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+}
+
+@mixin font-aleo {
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@mixin aleo-title {
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+@mixin aleo-bt {
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $white;
+}
+
+@mixin font-par {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+}
+
+@mixin flex-cen {
+    display: flex;
+    align-items: center;
+}
+
+@mixin name {
+    @include font-josefin;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: $white;
+    text-transform: uppercase;
+}
+
+@mixin text {
+    @include font-josefin;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: $white;
+}
+
+@mixin brakepoint ($size) {
+    @if $size == $sm {
+        @media screen and (max-width: $sm) {
+            @content;
+        }
+    }
+
+    @if $size == $md {
+        @media screen and (min-width: $md) and (max-width: $md-max){
+            @content;
+        }
+    }
+    @if $size == $lg {
+        @media screen and (min-width: $lg) and (max-width: $xl){
+            @content;
+        }
+    }
+    
+}
