@@ -6,30 +6,36 @@
     background-color: $blue;
     padding: 32px 0;
 
-    .container {
+    &__wraper {
+        width: 100%;
+        position: relative;
         @include flex-cen;
         justify-content: space-between;
 
-        @include brakepoint($md) {
-            flex-direction: column;
+        @include breakpoint(sm) {
+            justify-content: center;
         }
 
-
+        @include breakpoint(md) {
+            flex-direction: column;
+        }
     }
 
-    &__name {
-        @include name;
 
-        @include brakepoint($md) {
+    &__logo {
+        @include logo;
+
+        @include breakpoint(md) {
             margin-bottom: 32px;
         }
     }
 
     &__nav {
 
-        @include brakepoint($sm) {
+        @include breakpoint(sm) {
             display: none;
         }
+
 
         ul li {
             display: inline-block;
@@ -45,5 +51,16 @@
                 color: $white;
             }
         }
+    }
+
+    &__burger {
+        display: none;
+
+        @include breakpoint(sm) {
+            display: block;
+            right: 0;
+            position: absolute;
+        }
+
     }
 }

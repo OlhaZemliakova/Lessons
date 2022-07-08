@@ -5,34 +5,68 @@
     background-color: $grey;
     padding: 81px 0 44px;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
 
     &__line {
         max-width: 752px;
-        align-self: center;
+        width: 66%;
+        position: absolute;
+        left: 17%;
+        top: -46px;
+
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+        @include breakpoint(md) {
+            display: none;
+        }
     }
 
     &__wraper {
         @include flex-cen;
         justify-content: space-between;
+
+
+        @include breakpoint(sm) {
+           flex-direction: column;
+        }
+
+        @include breakpoint(md) {
+            flex-direction: column;
+         }
     }
 
-    & .steps-item {
+    .steps-item {
         @include flex-cen;
         flex-direction: column;
         width: 33%;
 
+        @include breakpoint(sm) {
+            width: 100%;
+            margin-bottom: 75px;
+
+            &:last-child {
+                margin-bottom: 60px;
+            }
+         }
+
+         @include breakpoint(md) {
+            width: 100%;
+            margin-bottom: 75px;
+
+            &:last-child {
+                margin-bottom: 60px;
+            }
+         }
+
         img {
-            width: 64px;
-            height: 64px;
+            width: 96px;
+            height: 96px;
             margin-bottom: 4px;
-            // border: 1px solid $grey;
-            // background-color: $grey;
-            // width: 96px;
-            // height: 96px;
+            padding: 16px;
+            background-color: $grey;
+            z-index: 2;
         }
 
         p {

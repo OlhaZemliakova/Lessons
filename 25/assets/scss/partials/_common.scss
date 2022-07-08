@@ -1,35 +1,87 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 
+
+* {
+    box-sizing: border-box;
+}
+
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 1140px;
     margin: 0 auto;
+    position: relative;
 
-    @include brakepoint($lg) {
-        max-width: 960px;
+    @include breakpoint(sm) {
+        max-width: 540px;
     }
 
-    @include brakepoint($md) {
+
+    @include breakpoint(md) {
         max-width: 720px;
     }
 
-    @include brakepoint($sm) {
-        max-width: 540px;
+    @include breakpoint(lg) {
+        max-width: 960px;
     }
+
 }
 
 .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 
-    &__reverse {
+    &--reverse {
         flex-direction: row-reverse;
+    }
+
+    &--sm-reverse {
+
+        @include breakpoint(sm) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &--md-reverse {
+
+        @include breakpoint(md) {
+            flex-direction: column-reverse;
+        }
     }
 }
 
 .col- {
+    &xl-4 {
+        width: 33.3%;
+    }
+
+    &xl-5 {
+        width: 41.7%;
+    }
+
     &xl-6 {
         width: 50%;
     }
+
+    &xl-7 {
+        width: 58.3%;
+    }
+
+    &xl-8 {
+        width: 66.7%;
+    }
+
+    &md-12 {
+        @include breakpoint(md) {
+            width: 100%;
+        }
+    }
+
+    &sm-12 {
+        @include breakpoint(sm) {
+            width: 100%;
+        }
+    }
+
 }

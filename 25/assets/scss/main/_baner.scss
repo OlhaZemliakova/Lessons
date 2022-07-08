@@ -11,7 +11,7 @@
     @include flex-cen;
     justify-content: center;
 
-    @include brakepoint($md) {
+    @include breakpoint(md) {
         height: calc(100vh - 144px);
     }
 
@@ -45,7 +45,6 @@
         max-width: 647px;
         background: $white;
         @include flex-cen;
-        padding: 4px 5px 4px 36px;
         justify-content: space-between;
 
         & input {
@@ -53,6 +52,7 @@
             flex: 1;
             border: 0;
             outline: none;
+            padding: 4px 5px 4px 36px;
 
             &::placeholder {
                 @include font-josefin;

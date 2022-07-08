@@ -1,12 +1,28 @@
 @import '../partials/variables';
 @import '../partials/mixins';
 
-.spain-upper {
-    background-image: url("../assets/images/section-3.png");
+.spain {
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
     padding: 220px 0 120px;
+
+    .container {
+        display: flex;
+    }
+
+    &--upper {
+        background-image: url("../assets/images/section-3.png");
+    }
+
+    &--lower {
+        background-image: url("../assets/images/section-4.png");
+
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
 
     .cta-wraper {
         background-color: rgba(35, 35, 35, 0.9);
@@ -14,17 +30,21 @@
         width: 100%;
         max-width: 558px;
 
-        @include brakepoint($lg) {
+        @include breakpoint(sm) {
+            max-width: 100%;
+        }
+
+        @include breakpoint(md) {
+            max-width: 100%;
+        }
+
+        @include breakpoint(lg) {
             max-width: 550px;
         }
 
-        @include brakepoint($md) {
-            max-width: 100%;
-        }
 
-        @include brakepoint($sm) {
-            max-width: 100%;
-        }
+
+
 
         .description {
             width: 100%;
@@ -38,6 +58,7 @@
                 letter-spacing: 0.1em;
                 color: $white;
                 margin-bottom: 16px;
+                display: block;
             }
 
             h3 {
@@ -47,6 +68,7 @@
                 line-height: 28px;
                 text-transform: uppercase;
                 color: $white;
+                margin-bottom: 16px;
             }
 
             p {
@@ -59,6 +81,7 @@
             @include aleo-bt;
             background-color: $blue;
             padding: 20px 57px;
+            display: inline-block;
         }
     }
 

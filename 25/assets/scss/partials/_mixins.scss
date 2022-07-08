@@ -45,7 +45,7 @@
     align-items: center;
 }
 
-@mixin name {
+@mixin logo {
     @include font-josefin;
     font-weight: 700;
     font-size: 24px;
@@ -64,22 +64,23 @@
     color: $white;
 }
 
-@mixin brakepoint ($size) {
-    @if $size == $sm {
-        @media screen and (max-width: $sm) {
+@mixin breakpoint ($size) {
+    @if $size ==sm {
+        @media screen and (min-width: 0) and (max-width: 767px) {
             @content;
         }
     }
 
-    @if $size == $md {
-        @media screen and (min-width: $md) and (max-width: $md-max){
+    @if $size ==md {
+        @media screen and (min-width: 768px) and (max-width: 991px) {
             @content;
         }
     }
-    @if $size == $lg {
-        @media screen and (min-width: $lg) and (max-width: $xl){
+
+    @if $size ==lg {
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
             @content;
         }
     }
-    
+
 }

@@ -5,7 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Document</title>
+    <title>Bhromaon</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,31 +55,36 @@
     </section>
     <header class="header">
         <div class="container">
-            <h2 class="header__name">Bhromaon</h2>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">What We Do</a></li>
-                    <li><a href="#">Travel With Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
+            <div class="header__wraper">
+                <h2 class="header__logo">Bhromaon</h2>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Travel With Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header__burger">
+                    <img src="assets/images/burger.svg" alt="menu">
+                </div>
+            </div>
         </div>
     </header>
     <section class="choose">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div class="row row--md-reverse row--sm-reverse">
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
                     <div class="description">
                         <h2>Why Choose Us</h2>
                         <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure
                             of the moment, so blinded by desire, that they cannot foresee</p>
                         <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
                             blinded by desire, that.</p>
+                        <a class="button" href="#">Explore Places</a>
                     </div>
-                    <a class="button" href="#">Explore Places</a>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
                     <div class="gallery">
                         <img class="img-start" src="assets/images/house.png" alt="house">
                         <img class="img-end" src="assets/images/forest.png" alt="forest">
@@ -72,9 +95,7 @@
     </section>
     <section class="steps">
         <div class="container">
-            <div class="steps__line">
-                <img src="assets/images/line.svg" alt="line">
-            </div>
+            <img class="steps__line" src="assets/images/line.svg" alt="line">
             <div class="steps__wraper">
                 <div class="steps-item">
                     <img src="assets/images/search.svg" alt="search">
@@ -91,7 +112,7 @@
             </div>
         </div>
     </section>
-    <section class="spain-upper">
+    <section class="spain spain--upper">
         <div class="container">
             <div class="cta-wraper">
                 <div class="description">
@@ -105,39 +126,42 @@
             </div>
         </div>
     </section>
-    <section class="spain-lower">
+    <section class="spain spain--lower">
         <div class="container">
-            <div class="row row-reverse">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <div class="col-wraper">
-                        <div class="description">
-                            <span>Spain</span>
-                            <h3>Grand Spain Madrid</h3>
-                            <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and
-                                praising pain was account born and I account will give you a complete account of the system
-                            </p>
-                        </div>
-                        <a class="button" href="#">book now</a>
-                    </div>
+            <div class="cta-wraper">
+                <div class="description">
+                    <span>Spain</span>
+                    <h3>Grand Spain Madrid</h3>
+                    <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and
+                        praising pain was account born and I account will give you a complete account of the system
+                    </p>
                 </div>
+                <a class="button" href="#">book now</a>
             </div>
         </div>
     </section>
     <section class="reviews">
         <div class="container">
             <h2>What Our Tourists Say</h2>
-            <div class="row">
+            <div class="row reviews__bg">
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                    <img src="assets/images/review-photo.png" alt="tourists">
+                    <div class="thumb">
+                        <img src="assets/images/review-p.jpg" alt="tourists">
+                    </div>
                 </div>
-                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 reviews__bg">
-                    <h3>Sam Sumon</h3>
-                    <p><span><img src="assets/images/quote-left.svg"></span> But I must explain to you how all this mistaken idea of account to denouncinpleasure and
-                        praising pain But I must explain to you how all this mistaken idea of account to nai denouncing
-                        pleasure and praising pain was account born and I account will give you a complete account of
-                        the system was account born and I account will give you a nai the complete account of the system
-                    </p>
-
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                    <div class="wraper">
+                        <h3>Sam Sumon</h3>
+                        <p><span><img src="assets/images/quote-left.svg"></span> But I must explain to you how all this
+                            mistaken idea of account to denouncinpleasure and
+                            praising pain But I must explain to you how all this mistaken idea of account to nai
+                            denouncing
+                            pleasure and praising pain was account born and I account will give you a complete account
+                            of
+                            the system was account born and I account will give you a nai the complete account of the
+                            system
+                        </p>
+                    </div>
                 </div>
             </div>
 
