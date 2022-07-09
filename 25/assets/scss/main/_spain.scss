@@ -12,11 +12,11 @@
     }
 
     &--upper {
-        background-image: url("../assets/images/section-3.png");
+        background-image: url("../assets/images/section-3.jpg");
     }
 
     &--lower {
-        background-image: url("../assets/images/section-4.png");
+        background-image: url("../assets/images/section-4.jpg");
 
         .container {
             flex-direction: row-reverse;
@@ -41,9 +41,6 @@
         @include breakpoint(lg) {
             max-width: 550px;
         }
-
-
-
 
 
         .description {

@@ -83,7 +83,7 @@
 }
 
 .baner {
-  background-image: url("../assets/images/header.-bg.png");
+  background-image: url("../assets/images/header.-bg.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   height: calc(100vh - 84px);
@@ -275,7 +275,7 @@
 }
 
 .choose {
-  background-image: url("../assets/images/why-background.png");
+  background-image: url("../assets/images/why-background.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
@@ -478,10 +478,10 @@
   display: flex;
 }
 .spain--upper {
-  background-image: url("../assets/images/section-3.png");
+  background-image: url("../assets/images/section-3.jpg");
 }
 .spain--lower {
-  background-image: url("../assets/images/section-4.png");
+  background-image: url("../assets/images/section-4.jpg");
 }
 .spain--lower .container {
   flex-direction: row-reverse;
@@ -557,7 +557,7 @@
 }
 
 .reviews {
-  background-image: url("../assets/images/reviews.png");
+  background-image: url("../assets/images/reviews.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
