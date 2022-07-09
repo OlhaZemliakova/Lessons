@@ -6,6 +6,25 @@
     box-sizing: border-box;
 }
 
+.flex {
+
+    &-start {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-end {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
 .container {
     width: 95%;
     max-width: 1140px;

@@ -12,7 +12,23 @@
 
     .description {
         width: 100%;
-        max-width: 558px;
+
+        @include breakpoint(sm) {
+            text-align: center;
+
+            p {
+                margin-bottom: 24px;
+            }
+        }
+
+        @include breakpoint(md) {
+            text-align: center;
+
+
+            p {
+                margin-bottom: 24px;
+            }
+        }
 
         h2 {
             @include aleo-title;
@@ -31,22 +47,6 @@
             background-color: $blue;
             padding: 20px 32px;
             display: inline-block;
-        }
-
-        @include breakpoint(sm) {
-            text-align: center;
-
-            p {
-                margin-bottom: 24px;
-            }
-        }
-
-        @include breakpoint(md) {
-            text-align: center;
-
-            p {
-                margin-bottom: 24px;
-            }
         }
 
     }
