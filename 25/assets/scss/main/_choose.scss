@@ -1,0 +1,106 @@
+@import '../partials/variables';
+@import '../partials/mixins';
+
+
+.choose {
+    background-image: url("../assets/images/why-background.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    padding: 124px 0;
+
+
+    .description {
+        width: 100%;
+
+        @include breakpoint(sm) {
+            text-align: center;
+
+            p {
+                margin-bottom: 24px;
+            }
+        }
+
+        @include breakpoint(md) {
+            text-align: center;
+
+
+            p {
+                margin-bottom: 24px;
+            }
+        }
+
+        h2 {
+            @include aleo-title;
+            color: $white;
+            margin-bottom: 24px;
+        }
+
+        p {
+            @include text;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            text-decoration: none;
+            @include aleo-bt;
+            background-color: $blue;
+            padding: 20px 32px;
+            display: inline-block;
+        }
+
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        max-width: 475px;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @include breakpoint(sm) {
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: space-between;
+            margin-bottom: 37px;
+        }
+
+        @include breakpoint(md) {
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 350px;
+
+        @include breakpoint(sm) {
+            width: 48%;
+            max-width: 258px;
+        }
+
+        @include breakpoint(md) {
+            width: 48%;
+            max-width: 350px;
+        }
+    }
+
+    .img-start {
+        margin-bottom: 16px;
+
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+        }
+
+        @include breakpoint(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    .img-end {
+        align-self: end;
+    }
+}

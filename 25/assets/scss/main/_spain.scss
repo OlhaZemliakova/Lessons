@@ -1,0 +1,85 @@
+@import '../partials/variables';
+@import '../partials/mixins';
+
+.spain {
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    padding: 220px 0 120px;
+
+    .container {
+        display: flex;
+    }
+
+    &--upper {
+        background-image: url("../assets/images/section-3.jpg");
+    }
+
+    &--lower {
+        background-image: url("../assets/images/section-4.jpg");
+
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    .cta-wraper {
+        background-color: rgba(35, 35, 35, 0.9);
+        padding: 44px 32px;
+        width: 100%;
+        max-width: 558px;
+
+        @include breakpoint(sm) {
+            max-width: 100%;
+        }
+
+        @include breakpoint(md) {
+            max-width: 100%;
+        }
+
+        @include breakpoint(lg) {
+            max-width: 550px;
+        }
+
+
+        .description {
+            width: 100%;
+            margin-bottom: 24px;
+
+            span {
+                @include font-josefin;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1em;
+                color: $white;
+                margin-bottom: 16px;
+                display: block;
+            }
+
+            h3 {
+                @include font-josefin;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                text-transform: uppercase;
+                color: $white;
+                margin-bottom: 16px;
+            }
+
+            p {
+                @include text;
+            }
+        }
+
+        .button {
+            text-decoration: none;
+            @include aleo-bt;
+            background-color: $blue;
+            padding: 20px 57px;
+            display: inline-block;
+        }
+    }
+
+}
