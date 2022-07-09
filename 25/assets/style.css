@@ -126,18 +126,20 @@
   width: 100%;
   max-width: 647px;
   background: #FFFFFF;
+}
+.baner .search-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 4px 5px 4px 36px;
 }
-.baner__search input {
+.baner input {
   background: transparent;
   flex: 1;
   border: 0;
   outline: none;
-  padding: 4px 5px 4px 36px;
 }
-.baner__search input::-moz-placeholder {
+.baner input::-moz-placeholder {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -146,7 +148,7 @@
   letter-spacing: 0.2em;
   color: #999999;
 }
-.baner__search input:-ms-input-placeholder {
+.baner input:-ms-input-placeholder {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -155,7 +157,7 @@
   letter-spacing: 0.2em;
   color: #999999;
 }
-.baner__search input::placeholder {
+.baner input::placeholder {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -164,7 +166,7 @@
   letter-spacing: 0.2em;
   color: #999999;
 }
-.baner__search button {
+.baner button {
   border: 0;
   background: #5373FD;
   padding: 16px 24px;
@@ -179,7 +181,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.baner__search button img {
+.baner button img {
   width: 16px;
   margin-right: 12px;
 }
