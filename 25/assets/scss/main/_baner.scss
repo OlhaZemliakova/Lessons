@@ -6,14 +6,10 @@
     background-image: url("../assets/images/header.-bg.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-    height: calc(100vh - 84px);
+    height: 100vh;
     background-size: cover;
     @include flex-cen;
     justify-content: center;
-
-    @include breakpoint(md) {
-        height: calc(100vh - 144px);
-    }
 
     .container {
         @include flex-cen;
@@ -82,18 +78,22 @@
     }
 
     &__scroll {
-        @include flex-cen;
-        flex-direction: column;
         position: absolute;
         bottom: 22vh;
-    
+
+        a {
+            text-decoration: none;
+            @include flex-cen;
+            flex-direction: column;
+        }
+
         p {
             @include font-josefin;
             color: $white;
             @include font-par;
             margin-bottom: 8px;
         }
-    
+
         span {
             width: 14px;
         }
