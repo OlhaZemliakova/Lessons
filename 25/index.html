@@ -50,14 +50,20 @@
             </div>
         </div>
         <div class="baner__scroll">
-            <p>Scroll Down</p>
-            <span><img src="assets/images/chevron-down.svg" alt="chevron"></span>
+            <a href="#main-header">
+                <p>Scroll Down</p>
+                <span><img src="assets/images/chevron-down.svg" alt="chevron"></span>
+            </a>
         </div>
     </section>
-    <header class="header">
+    <header class="header" id="main-header">
         <div class="container">
+            <input type="checkbox" id="mobile-menu">
             <div class="header__wraper">
                 <h2 class="header__logo">Bhromaon</h2>
+                <label class="burger-button" for="mobile-menu">
+                   <span class="burger-button__icon"></span>
+               </label>
                 <nav class="header__nav">
                     <ul>
                         <li><a href="#">Who We Are</a></li>
@@ -66,9 +72,6 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
-                <div class="header__burger">
-                    <img src="assets/images/burger.svg" alt="menu">
-                </div>
             </div>
         </div>
     </header>
@@ -153,7 +156,8 @@
                 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                     <div class="wraper">
                         <h3>Sam Sumon</h3>
-                        <p><span><img src="assets/images/quote-left.svg" alt="quote-left"></span> But I must explain to you how all this
+                        <p><span><img src="assets/images/quote-left.svg" alt="quote-left"></span> But I must explain to
+                            you how all this
                             mistaken idea of account to denouncinpleasure and
                             praising pain But I must explain to you how all this mistaken idea of account to nai
                             denouncing
