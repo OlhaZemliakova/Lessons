@@ -97,7 +97,7 @@
 
         &:checked {
 
-            ~ .header__wraper .burger-button .burger-button__icon {
+            ~.header__wraper .burger-button .burger-button__icon {
                 border-color: transparent;
 
                 &::before {
@@ -109,15 +109,17 @@
                 }
             }
 
-            ~ .header__wraper {
+            ~.header__wraper {
                 flex-direction: column;
+                
             }
 
-            ~ .header__wraper .header__nav {
+            ~.header__wraper .header__nav {
                 display: block;
                 width: 100%;
                 margin-top: 64px;
-                
+
+
                 li {
                     width: 100%;
                     text-align: center;
