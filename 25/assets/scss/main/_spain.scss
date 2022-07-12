@@ -79,6 +79,12 @@
             background-color: $blue;
             padding: 20px 57px;
             display: inline-block;
+            background-image: url("../assets/images/bt.png");
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-color: $dark-blue;
+            }
         }
     }
 

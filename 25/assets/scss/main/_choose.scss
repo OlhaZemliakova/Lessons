@@ -47,6 +47,12 @@
             background-color: $blue;
             padding: 20px 32px;
             display: inline-block;
+            background-image: url("../assets/images/bt.png");
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-color: $dark-blue;
+            }
         }
 
     }
@@ -54,7 +60,7 @@
     .gallery {
         display: flex;
         flex-direction: column;
-        max-width: 475px;
+        max-width: 424px;
         width: 100%;
         flex-wrap: wrap;
 

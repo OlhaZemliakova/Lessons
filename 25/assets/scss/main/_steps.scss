@@ -3,15 +3,24 @@
 
 .steps {
     background-color: $grey;
-    padding: 81px 0 44px;
+    padding: 107px 0 103px;
+
+    @include breakpoint(xl) {
+        padding: 122px 0 88px;
+
+    }
 
 
     &__line {
-        max-width: 752px;
+        max-width: 872px;
         width: 66%;
         position: absolute;
         left: 17%;
         top: -46px;
+
+        @include breakpoint(xl) {
+            max-width: 752px;
+        }
 
 
         @include breakpoint(sm) {
@@ -29,12 +38,12 @@
 
 
         @include breakpoint(sm) {
-           flex-direction: column;
+            flex-direction: column;
         }
 
         @include breakpoint(md) {
             flex-direction: column;
-         }
+        }
     }
 
     .steps-item {
@@ -49,16 +58,16 @@
             &:last-child {
                 margin-bottom: 60px;
             }
-         }
+        }
 
-         @include breakpoint(md) {
+        @include breakpoint(md) {
             width: 100%;
             margin-bottom: 75px;
 
             &:last-child {
                 margin-bottom: 60px;
             }
-         }
+        }
 
         img {
             width: 96px;

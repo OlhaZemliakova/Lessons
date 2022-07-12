@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  transition: all 0.3s ease-in;
 }
 
 .flex-start {
@@ -17,7 +18,7 @@
 
 .container {
   width: 95%;
-  max-width: 1140px;
+  max-width: 1320px;
   margin: 0 auto;
   position: relative;
 }
@@ -34,6 +35,11 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+}
+@media screen and (min-width: 1199px) and (max-width: 1359px) {
+  .container {
+    max-width: 1140px;
   }
 }
 
@@ -92,6 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 862px;
 }
 .baner .container {
   display: flex;
@@ -183,7 +190,7 @@
 }
 .baner__scroll {
   position: absolute;
-  bottom: 22vh;
+  bottom: 35vh;
 }
 .baner__scroll a {
   text-decoration: none;
@@ -385,11 +392,16 @@
   background-color: #5373FD;
   padding: 20px 32px;
   display: inline-block;
+  background-image: url("../assets/images/bt.png");
+  background-repeat: no-repeat;
+}
+.choose .description .button:hover {
+  background-color: #486BFE;
 }
 .choose .gallery {
   display: flex;
   flex-direction: column;
-  max-width: 475px;
+  max-width: 424px;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -444,14 +456,24 @@
 
 .steps {
   background-color: #333333;
-  padding: 81px 0 44px;
+  padding: 107px 0 103px;
+}
+@media screen and (min-width: 1199px) and (max-width: 1359px) {
+  .steps {
+    padding: 122px 0 88px;
+  }
 }
 .steps__line {
-  max-width: 752px;
+  max-width: 872px;
   width: 66%;
   position: absolute;
   left: 17%;
   top: -46px;
+}
+@media screen and (min-width: 1199px) and (max-width: 1359px) {
+  .steps__line {
+    max-width: 752px;
+  }
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   .steps__line {
@@ -606,6 +628,11 @@
   background-color: #5373FD;
   padding: 20px 57px;
   display: inline-block;
+  background-image: url("../assets/images/bt.png");
+  background-repeat: no-repeat;
+}
+.spain .cta-wraper .button:hover {
+  background-color: #486BFE;
 }
 
 .reviews {
@@ -652,7 +679,6 @@
 
 .wraper {
   padding: 48px 60px;
-  max-width: 640px;
 }
 .wraper h3 {
   font-family: "Josefin Sans", sans-serif;

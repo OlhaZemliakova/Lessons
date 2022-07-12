@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    transition: all 0.3s ease-in;
 }
 
 .flex {
@@ -27,7 +28,7 @@
 
 .container {
     width: 95%;
-    max-width: 1140px;
+    max-width: 1320px;
     margin: 0 auto;
     position: relative;
 
@@ -42,6 +43,10 @@
 
     @include breakpoint(lg) {
         max-width: 960px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 1140px;
     }
 
 }
