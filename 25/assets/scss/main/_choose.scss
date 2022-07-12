@@ -9,6 +9,14 @@
     background-size: cover;
     padding: 124px 0;
 
+    @include breakpoint(sm) {
+        padding: 60px 0;
+    }
+
+    @include breakpoint(md) {
+        padding: 60px 0;
+    }
+
 
     .description {
         width: 100%;

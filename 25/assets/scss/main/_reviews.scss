@@ -8,6 +8,14 @@
     background-size: cover;
     padding: 120px 0 180px;
 
+    @include breakpoint(sm) {
+        padding: 60px 120px;
+    }
+
+    @include breakpoint(md) {
+        padding: 60px 120px;
+    }
+
     &__bg {
         background-color: $grey;
         align-items: stretch;

@@ -7,6 +7,14 @@
     background-size: cover;
     padding: 220px 0 120px;
 
+    @include breakpoint(sm) {
+        padding: 120px 0;
+    }
+
+    @include breakpoint(md) {
+        padding: 120px 0;
+    }
+
     .container {
         display: flex;
     }

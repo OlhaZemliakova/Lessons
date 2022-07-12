@@ -341,6 +341,16 @@
   background-size: cover;
   padding: 124px 0;
 }
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .choose {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .choose {
+    padding: 60px 0;
+  }
+}
 .choose .description {
   width: 100%;
 }
@@ -464,6 +474,16 @@
     padding: 122px 0 88px;
   }
 }
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .steps {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .steps {
+    padding: 60px 0;
+  }
+}
 .steps__line {
   max-width: 872px;
   width: 66%;
@@ -548,6 +568,16 @@
   background-position-x: center;
   background-size: cover;
   padding: 220px 0 120px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .spain {
+    padding: 120px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .spain {
+    padding: 120px 0;
+  }
 }
 .spain .container {
   display: flex;
@@ -642,6 +672,16 @@
   background-position-x: center;
   background-size: cover;
   padding: 120px 0 180px;
+}
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .reviews {
+    padding: 60px 120px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .reviews {
+    padding: 60px 120px;
+  }
 }
 .reviews__bg {
   background-color: #333333;
