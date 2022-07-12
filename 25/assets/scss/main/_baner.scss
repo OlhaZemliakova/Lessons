@@ -10,7 +10,8 @@
     background-size: cover;
     @include flex-cen;
     justify-content: center;
-    height: 862px;
+    max-height: 862px;
+    position: relative;
 
     .container {
         @include flex-cen;
@@ -80,7 +81,7 @@
 
     &__scroll {
         position: absolute;
-        bottom: 35vh;
+        bottom: 14vh;
 
         a {
             text-decoration: none;
