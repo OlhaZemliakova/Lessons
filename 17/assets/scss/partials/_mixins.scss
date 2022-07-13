@@ -1,0 +1,14 @@
+@mixin breakpoint ($size) {
+
+@if $size ==sm {
+    @media screen and (min-width: 0) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@if $size ==md {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+}

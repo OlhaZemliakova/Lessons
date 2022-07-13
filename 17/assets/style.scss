@@ -1,0 +1,239 @@
+@import 'scss/partials/common';
+
+.head {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include breakpoint(sm) {
+        margin-bottom: 20px;
+
+        .divider {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+    }
+
+    span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $grey;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 66px;
+        text-transform: uppercase;
+        color: $yellow;
+        margin-bottom: 40px;
+
+        @include breakpoint(sm) {
+            font-size: 40px;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+
+        @include breakpoint(md) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 65px 0;
+
+    @include breakpoint(sm) {
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include breakpoint(md) {
+        padding: 20px 0;
+    }
+
+    .photo {
+        position: relative;
+        padding: 15px;
+        margin: 65px 0;
+        max-width: 430px;
+
+        @include breakpoint(sm) {
+            margin: 10px 0;
+        }
+
+        @include breakpoint(md) {
+            margin: 30px 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .corner {
+            position: absolute;
+
+            &--top-left {
+                top: 0;
+                left: 0;
+            }
+
+            &--top-right {
+                top: 0;
+                right: 0;
+                transform: rotate(90deg);
+            }
+
+            &--bottom-left {
+                bottom: 0;
+                left: 0;
+                transform: rotate(270deg);
+            }
+
+            &--bottom-right {
+                bottom: 0;
+                right: 0;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 65px 0;
+        max-width: 430px;
+
+        @include breakpoint(sm) {
+            margin: 30px 0;
+        }
+
+
+        @include breakpoint(md) {
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            text-transform: capitalize;
+            color: $dark-grey;
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+
+            @include breakpoint(sm) {
+                font-size: 26px;
+                line-height: 35px;
+                text-align: center;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+            }
+
+            &::after {
+                content: "";
+                width: 100px;
+                border: 1px solid $yellow;
+                position: absolute;
+                bottom: 0;
+                right: calc(50% - 50px);
+            }
+        }
+
+        h3 {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-transform: capitalize;
+            color: $dark-grey;
+            margin-bottom: 30px;
+
+            @include breakpoint(sm) {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+
+        .socials {
+            margin-bottom: 50px;
+
+            @include breakpoint(sm) {
+                margin-bottom: 25px;
+            }
+
+            @include breakpoint(md) {
+                margin-bottom: 25px;
+            }
+
+            a {
+                margin-right: 5px;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+
+                &:hover svg path {
+                    fill: $yellow;
+                }
+            }
+        }
+
+        p {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sliders {
+            margin-bottom: 25px;
+        }
+
+        .button {
+            font-family: 'Open Sans', sans-serif;
+            color: $dark-grey;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid $yellow;
+            padding: 5px 10px;
+
+            &:hover {
+                color: $yellow;
+                border: 1px solid $dark-grey;
+                transition: all 0.5s ease;
+            }
+        }
+
+    }
+
+}
