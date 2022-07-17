@@ -1,0 +1,21 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    @include breakpoint(sm) {
+        max-width: 540px;
+    }
+
+    @include breakpoint(md) {
+        max-width: 720px;
+    }
+}

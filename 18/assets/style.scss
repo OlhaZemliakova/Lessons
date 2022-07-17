@@ -1,0 +1,45 @@
+@import './scss/main/item.scss';
+@import './scss/partials/common';
+@import './scss/partials/mixins';
+@import './scss/partials/variables';
+@import './scss/partials/icons';
+
+h2 {
+    font-family: 'Delius Unicase', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $black;
+}
+
+.cities {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, 370px);
+        gap: 30px;
+    }
+
+}
+
+.nature {
+
+    .wrapper {
+        display: grid;
+
+    }
+
+}
+
+.people {
+
+    .wrapper {
+        display: grid;
+
+    }
+
+}
