@@ -1,370 +1,125 @@
+//Minimum:
 
-// function getSmaller(a,b){
+// 1 Напиши всі можливі варіанти створення функцій:
 
-//     if(a<b){
-//         return a;
+// 1. Function Declaration: функція в основному потоці коду;
+// 2. Function Expression: функція як частина виразу;
+// 3. Стрілкові функції.
 
-//     } else {
-//         return b;
-//     }
-// }
-// getSmaller(6,7);
+// 2. Створи функцію, яка буде виводити кількість переданих їй аргументів.
 
-// function calc (num1, num2, sign) {
-//     switch (sign) {
-//     case '+':
-//         return num1 + num2;
-//     case '-':
-//         return num1 - num2;
-//     case '/':
-//         if(num2 === 0) {
-//             return 0;
-//         }
-//         return num1 / num2;
-//     case '*':
-//         return num1 - num2;
-//     default:
-//         return null;
-// }
-// }
+function numberOfArguments() {
 
-// alert(calc(6, 3, '/'))
-
-// const number = parseInt(prompt('Enter an integer: '));
-
-// for(let i = 2; i <= 9; i++) {
-
-//     const result = i * number;
-
-//     console.log(`${number} * ${i} = ${result}`);
-// }
-
-// function smaller(a,b){
-//     if(a<b){
-//         console.log( a);
-//     }else{
-//         console.log(b);
-//     }
-// }
-// smaller(4,5);
-// Max Skvortsov to Everyone (18:39)
-// function getSmaller(a, b) {
-//     if( a < b) {
-//         return a;
-//     } else if (a > b) {
-//         return b;
-//     } else {
-//         alert("They are equals");
-//     }
-// }
-
-// alert(getSmaller(10, 5));
-// Антон Сокол to Everyone (18:39)
-// function MaxValue(arg1, arg2){
-//     if(arg1>arg2){
-//         alert (arg1)
-//     }else if(arg2>arg1){
-//         alert( arg2)
-//     }else{
-//         alert( 'Ooops...')
-//     }
-// }
-// MaxValue(1,1)
-// Max Skvortsov to Everyone (18:40)
-// function getSmaller(a, b) {
-//     if( a < b) {
-//         return a;
-//     } else if (a > b) {
-//         return b;
-//     } else {
-        
-//         return "They are equals";
-//     }
-// }
-
-// alert(getSmaller(10, 10));
-// Zadorozhnii Vova to Everyone (18:42)
-// function smaller(a,b){
-//     if(a<=b){
-//         return(a);
-//     }else{
-//         return(b);
-//     }
-// }
-// smaller(4,5);
-// Maria Demianchuk to Everyone (18:42)
-// function SmallerNum (num1, num2) {
-//     if (num1>=num2) {
-//         return num2
-//     } else {
-//         return num1
-//     }
-// }
-// alert(SmallerNum(190,90))
-// Vitalii Lymar to Everyone (18:42)
-// function number( numb1, numb2){
-//     if(numb1 > numb2){
-//         retorn("numb1")
-//     }
-//    if(numb1 < numb2) {
-//     retorn("numb2")
-//     }
-// }
-// Anastasia Kustovska 楚月 to Everyone (18:43)
-// function min(num1, num2)
-// {
-//     return Math.min(num1, num2);
-// }
-// Zadorozhnii Vova to Everyone (18:50)
-// function pow(a, b){
-//     return Math.pow(a, b);
-// }
-
-// alert(pow(2, 3))
-// Антон Сокол to Everyone (18:53)
-// function Calc(arg1, arg2, arg3) {
-//     if (arg3 == '+') {
-//         return arg1 + arg2
-//     } else if (arg3 == '-') {
-//         return arg1 - arg2
-//     } else if (arg3 == '*') {
-//         return arg1 * arg2
-//     } else if (arg3 === '/') {
-//         if (arg2 === 0) {
-//             return 'Mistake'
-//         } else {
-//             return arg1 / arg2
-//         }
-//     }
-// }
-
-// let check = prompt()
-
-
-// alert(Calc(9, 0, check))
-// Max Skvortsov to Everyone (18:54)
-// function mathPlug(num1, num2, sign) {
-//     switch (sign) {
-//         case '+':
-//             return num1 + num2;
-//         case '-':
-//             return num1 - num2;
-//         case '/':
-//             if(num2 === 0) {
-//                 return 0;
-//             } 
-//             return num1 + num2;
-//         case '*':
-//             return num1 - num2;
-//         default:
-//             return num1 + num2;
-//     }
-// }
-
-// alert(mathPlug(1, 0, '/'));
-// Max Skvortsov to Everyone (18:57)
-// function mathPlug(num1, num2, sign) {
-//     switch (sign) {
-//         case '+':
-//             return num1 + num2;
-//         case '-':
-//             return num1 - num2;
-//         case '/':
-//             if(num2 === 0 && num1 > 0) {
-//                 if(num1 > 0){
-//                     return Infinity;
-//                 } else if (num1 < 0) {
-//                     return -Infinity;
-//                 }
-                
-//             } 
-//             return num1 + num2;
-//         case '*':
-//             return num1 - num2;
-//         default:
-//             return num1 + num2;
-//     }
-// }
-
-// alert(mathPlug(1, 0, '/'));
-// Maria Demianchuk to Everyone (18:59)
-// function MathFunction(num1, num2, sign) {
-//     switch (sign) {
-//         case '*': return num1 * num2
-//             break
-//         case '/': return num1 / num2
-//             break
-//         case '+': return num1 + num2
-//             break
-//         case '-': return num1 - num2
-//             break
-//     }
-// }
-
-// alert(MathFunction(90, 190, '-'))
-// Anastasia Kustovska 楚月 to Everyone (19:00)
-// function calculate (num1, num2, sign) {
-//         switch (sign) {
-//         case '+':
-//             return num1 + num2;
-//         case '-':
-//             return num1 - num2;
-//         case '/':
-//             if(num2 === 0) {
-//                 return 0;
-//             }
-//             return num1 / num2;
-//         case '*':
-//             return num1 - num2;
-//         default:
-//             return null;
-//     }
-// }
-
-// alert(calculate(9, 2, '+'))
-// Me to Everyone (19:03)
-// function calc (num1, num2, sign) {
-//     switch (sign) {
-//     case '+':
-//         return num1 + num2;
-//     case '-':
-//         return num1 - num2;
-//     case '/':
-//         if(num2 === 0) {
-//             return 0;
-//         }
-//         return num1 / num2;
-//     case '*':
-//         return num1 - num2;
-//     default:
-//         return null;
-// }
-// }
-
-// alert(calc(6, 3, '/'))
-// Vitalii Lymar to Everyone (19:03)
-// function twoNumber(a1,a2,res){
-//     switch (res){
-//         case "+":
-//             return a1 + a2;
-//         case "-":
-//             return a1 - a2;
-            
-//         case "*":
-//             return a1 * a2;
-        
-//         case "/":
-//             return a1 / a2;
-         
-//     }
-// }
-// alert(twoNumber(6,3,"/"))
-// Zadorozhnii Vova to Everyone (19:03)
-// function count(a, b, sign){
-//     switch(sign){
-//         case '*' :
-//             return a * b;
-//         case '/':
-//             if (b===0){
-//                 return 0;
-//             }else{
-//                 return a / b;
-//             }   
-//         case '-':
-//            return a - b;
-//         case '+':
-//            return a + b;
-//         default:
-//             return null;   
-//     }
-// }
-
-// console.log(count(100,10,'+'));
-// Антон Сокол to Everyone (19:20)
-// function Table(value){
-//     for(let i=2;i<10;i++){
-//         document.write(value*i,"\n")
-//     }
-//     document.write('<br>')
-// }
-// for(let i=2;i<10;i++){
-//     Table(i)
-// }
-// Max Skvortsov to Everyone (19:21)
-// let start = 2;
-// let finish = 9;
-// let template = `<table border=1 id="1">`;
-
-// function multiply(num) {
-//     template += `<tr>`;
-//     for(let j = 1; j <= 10; j++){
-//         template += `<td>${num} x ${j} = ${num*j}</td>`;
-//     }
-//     template += `</tr>`;
-
-// }
-
-
-// window.onload = function () {
-//     for (let i = start; i < finish + 1; i++) {
-//         multiply(i);
-//     }
-//     document.body.innerHTML = template;
-// }
-// Zadorozhnii Vova to Everyone (19:21)
-// function calc(a,b){
-//     for(let i = a; i <= b; i++) {
-//         for(let j = 1; j <= 10; j++) {
-//          document.write(`${i} * ${j} = ${i*j} </br>`);
-//        }
-//     }
-// }
-
-// console.log(calc(2,9))
-// Anastasia Kustovska 楚月 to Everyone (19:22)
-// function multiplication(number) {
-// for (let i = 2; i <= 9; i++) {
-// console.log(number*i);
-// }
-// }
-// Me to Everyone (19:22)
-// const number = parseInt(prompt('Enter an integer: '));
-
-// for(let i = 2; i <= 9; i++) {
-
-//     const result = i * number;
-
-//     console.log(`${number} * ${i} = ${result}`);
-// }
-// Max Skvortsov to Everyone (19:33)
-// let start = 2;
-// let finish = 9;
-// let template = `<table border=1 id="1">`;
-
-// function addTd(num1, num2, result) {
-//     template += `<td>${num1} x ${num2} = ${result}</td>`;    
-// }
-
-// function addTr(i) {
-//     template += `<tr>`;
-//     multiply(i);
-//     template += `</tr>`;
-// }
-
-// function multiply(num) { 
-//     for(let j = 1; j <= 10; j++){
-//         addTd(num, j, num*j);
-//     }
-// }
-
-// window.onload = function () {
-//     for (let i = start; i < finish + 1; i++) {
-//         addTr(i);
-//     }
-//     document.body.innerHTML = template;
-// }
-
-function sumNum(n1=0, n2=0, n3=0, n4=0, n5=0){
-    return(n1+n2+n3+n4+n5);
+    return (arguments.length)
 }
-console.log( sum(1,2,3,4,5) )
+console.log(numberOfArguments(2, 3, 6, 4, 5, 9, 3, 5, 6));
+
+// 3. Напиши функцію, яка приймає 2 числа і повертає :
+// -1, якщо перше число менше, ніж друге; 
+// 1 - якщо перше число більше, ніж друге; 
+// 0 - якщо числа рівні.
+
+function returnNum(num1, num2) {
+    if (num1 < num2) {
+        return -1;
+    } if (num1 > num2) {
+        return 1;
+    } if (num1 === num2) {
+        return 0;
+    }
+}
+console.log(returnNum(8, 10));
+console.log(returnNum(10, 8));
+console.log(returnNum(10, 10));
+
+// 4. Напиши функцію, яка обчислює факторіал переданого їй числа.
+
+function factorial(n) {
+    if (n == 0) return 1;
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+console.log(factorial(9));
+
+// 5. Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
+// Наприклад: цифри 1, 4, 9 перетворяться в число 149.
+
+function numberConversion(n1, n2, n3) {
+
+    return parseInt((n1.toString() + n2.toString() + n3.toString()));
+}
+
+console.log(numberConversion(2, 5, 8));
+
+
+// 6. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу.
+// Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.
+
+function area(length, width) {
+    return length * width;
+}
+
+console.log(area(2, 5));
+
+// Normal:
+
+// 1. Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”.
+// Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
+
+function isPerfect(n) {
+
+    sum = 1;
+
+    for (let i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            if (i * i != n)
+                sum = sum + i + n / i;
+            else
+                sum = sum + i;
+        }
+    }
+
+    if (sum == n && n != 1) {
+        return console.log(`The number ${n} is perfect`);
+    } else {
+        return console.log(`The number ${n} is not perfect`);
+    }
+}
+
+isPerfect(42)
+isPerfect(496)
+
+// 2. Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими.
+// Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.
+
+function valueRangeOfNumbers(a, b) {
+    let perf = [];
+
+    for (n = a; n <= b; n++) {
+        function isPerfect(n) {
+            let sum = 1;
+            for (let i = 2; i * i <= n; i++) {
+                if (n % i == 0) {
+                    if (i * i != n)
+                        sum = sum + i + n / i;
+                    else
+                        sum = sum + i;
+                }
+            }
+            if (sum === n) {
+                return true;
+            } else {
+                return false;
+            };
+        }
+        if (isPerfect(n) == true) {
+            perf.push(n);
+        }
+    }
+    return perf;
+}
+
+console.log(valueRangeOfNumbers(1, 496));
+
+
