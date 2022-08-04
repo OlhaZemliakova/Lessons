@@ -40,20 +40,34 @@ let shopingList = [
 
 shopingList.sort(function (a, b) {
     if (a.isItBuy > b.isItBuy) {
-      return 1;
+        return 1;
     }
     if (a.isItBuy < b.isItBuy) {
-      return -1;
+        return -1;
     }
     return 0;
 });
-console.log(shopingList)
+console.log(shopingList);
 
 //Покупка продукту. Функція приймає назву продукту і відзначає його як придбаний.
 
-function done(array, productType) {
-    const item = array.find(item => item.productType == productType);
-    item.isItBuy = true;
+function done(array, productName) {
+    let element = array.find(element => element.productName == productName);
+    element.isItBuy = true;
     return array
 }
-console.log(done(toBuy, 'milk'))
+console.log(done(shopingList, 'bread'));
+
+// Норма
+
+// 1. Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
+
+function removeElement(array, productName) {
+    let newArray = array.filter((element => element.productName !== productName));
+    return newArray;
+}
+console.log(removeElement(shopingList, 'avocado'))
+
+
+// 2. Додавання покупки в список. Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці,
+// а не додавати нову. При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
