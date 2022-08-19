@@ -1,0 +1,63 @@
+@import '_variables.scss';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    .header {
+
+        &__container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 0;
+            margin: 0 auto;
+        }
+
+        &__logo {
+            max-width: 182px;
+        }
+
+        &__nav {
+
+            ul li {
+                display: inline-block;
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    &:hover {
+                        background-color: $tomato-light;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &__tools {
+
+            display: flex;
+
+            .search {
+                width: 36px;
+                height: 36px;
+                margin-right: 36px;
+            }
+
+            .user {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+}
