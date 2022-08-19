@@ -1,0 +1,130 @@
+body {
+  box-sizing: border-box;
+  background-color: #2B3040;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+body .container {
+  background-image: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  height: 860px;
+  margin: 0 auto;
+}
+body .container .wrapper {
+  background-color: #212534;
+  max-width: 600px;
+  margin: 154px 200px;
+  position: absolute;
+}
+body .container .wrapper .tabs {
+  background-color: #2B3040;
+  padding: 28px 53px;
+}
+body .container .wrapper .tabs ul li {
+  display: inline-block;
+  margin-right: 69px;
+  cursor: pointer;
+}
+body .container .wrapper .tabs ul li:last-child {
+  margin-right: 0px;
+}
+body .container .wrapper .tabs ul li img {
+  display: block;
+  margin: 0 auto;
+}
+body .container .wrapper .tabs ul li.active span {
+  color: #FFFFFF;
+}
+body .container .wrapper .tabs ul li span {
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #8D91A3;
+  display: block;
+  margin-top: 15px;
+}
+body .container .wrapper .card {
+  padding: 60px 40px;
+  display: flex;
+}
+body .container .wrapper .card .col-5 {
+  width: 41.6%;
+}
+body .container .wrapper .card .col-5 .picture {
+  margin-bottom: 25px;
+}
+body .container .wrapper .card .col-5 .star-rating ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+body .container .wrapper .card .col-5 .star-rating ul li:last-child {
+  margin-bottom: 0px;
+}
+body .container .wrapper .card .col-5 .star-rating ul li.active .filled {
+  display: block;
+}
+body .container .wrapper .card .col-5 .star-rating ul li.active .empty {
+  display: none;
+}
+body .container .wrapper .card .col-5 .star-rating ul li .filled {
+  display: none;
+}
+body .container .wrapper .card .col-5 .star-rating ul li .empty {
+  display: block;
+}
+body .container .wrapper .card .col-7 {
+  width: 58.4%;
+}
+body .container .wrapper .card .col-7 .card__header {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .wrapper .card .col-7 .card__header .title {
+  color: #FFFFFF;
+}
+body .container .wrapper .card .col-7 .card__header .title h1 {
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+body .container .wrapper .card .col-7 .card__header .title .date {
+  font-size: 14px;
+  line-height: 20px;
+}
+body .container .wrapper .card .col-7 .description {
+  color: #B7BACD;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 40px 0 50px;
+}
+body .container .wrapper .card .col-7 .card__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 13px;
+}
+body .container .wrapper .card .col-7 .card__bottom .discount {
+  color: #FFDD3F;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+body .container .wrapper .card .col-7 .card__bottom .price-item {
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .container .wrapper .card .col-7 .card__bottom .button {
+  background-color: #13E28D;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 20px 30px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

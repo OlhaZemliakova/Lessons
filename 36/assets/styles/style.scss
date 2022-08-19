@@ -1,0 +1,169 @@
+@import '_variables.scss';
+
+body {
+    box-sizing: border-box;
+    background-color: $dark-blue;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+    .container {
+        background-image: url(../images/bg-image.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+        position: relative;
+        width: 90%;
+        max-width: 1000px;
+        height: 860px;
+        margin: 0 auto;
+
+        .wrapper {
+            background-color: $deep-blue;
+            max-width: 600px;
+            margin: 154px 200px;
+            position: absolute;
+
+            .tabs {
+                background-color: $dark-blue;
+                padding: 28px 53px;
+
+                ul li {
+                    display: inline-block;
+                    margin-right: 69px;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    &.active {
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        color: $dark-grey;
+                        display: block;
+                        margin-top: 15px;
+                    }
+
+                }
+            }
+
+            .card {
+                padding: 60px 40px;
+                display: flex;
+
+                .col-5 {
+                    width: 41.6%;
+
+                    .picture {
+                        margin-bottom: 25px;
+                    }
+
+                    .star-rating {
+                        ul li {
+                            display: inline-block;
+                            margin-right: 10px;
+
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+
+                            &.active {
+
+                                .filled {
+                                    display: block;
+                                }
+
+                                .empty {
+                                    display: none;
+                                }
+                            }
+
+                            .filled {
+                                display: none;
+                            }
+
+                            .empty {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .col-7 {
+                    width: 58.4%;
+
+                    .card__header {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .title {
+                            color: $white;
+
+                            h1 {
+                                font-size: 32px;
+                                line-height: 32px;
+                                margin-bottom: 15px;
+                            }
+
+                            .date {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .description {
+                        color: $light-grey;
+                        font-size: 14px;
+                        line-height: 22px;
+                        margin: 40px 0 50px;
+                    }
+
+                    .card__bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 13px;
+
+                        .discount {
+                            color: $yellow;
+                            font-size: 12px;
+                            line-height: 20px;
+                            margin-bottom: 4px;
+                        }
+
+                        .price-item {
+                            font-size: 32px;
+                            line-height: 32px;
+                            color: $white;
+                        }
+
+                        .button {
+                            background-color: $light-green;
+                            text-decoration: none;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-transform: uppercase;
+                            border-radius: 2px;
+                            padding: 20px 30px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
