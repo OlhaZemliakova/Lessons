@@ -1,5 +1,5 @@
 $(function(){
-    $(".slider-top").slick({
+    $(".baner__carousel").slick({
       dots: true,
       infinite: true,
       speed: 500,
