@@ -1,4 +1,5 @@
 @import '_variables.scss';
+@import '_mixins.scss';
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -9,4 +10,41 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-};
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px 57px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &-dark {
+        border: 2px solid black;
+        color: black;
+    }
+
+    &-light {
+        border: 2px solid $brown-light;
+        color: white;
+    }
+
+    &:hover {
+        background-color: $tomato-light;
+        border: 2px solid $tomato-light;
+        color: white;
+    }
+}

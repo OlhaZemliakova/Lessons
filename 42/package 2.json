@@ -1,0 +1,16 @@
+{
+  "name": "lesson-42",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "Olha Zemliakova",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "7.1.0"
+  }
+}
+
