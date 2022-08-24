@@ -1,0 +1,522 @@
+@import '_common.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
+
+
+
+.header {
+
+    background-color: $brown-light;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    &__logo {
+        max-width: 182px;
+        padding: 22px 0;
+
+        img {
+            width: 100%;
+        }
+
+        @include breakpoint(sm) {
+            max-width: 100px;
+            padding: 20px 0;
+        }
+
+        @include breakpoint(md) {
+            max-width: 168px;
+            padding: 15px 0;
+        }
+    }
+
+    &__nav {
+
+        ul li {
+            display: inline-block;
+            margin-right: 30px;
+
+            @include breakpoint(md) {
+                margin-right: 20px;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                font-size: 20px;
+                padding: 28px 0;
+
+                @include breakpoint(md) {
+                    font-size: 16px;
+                    padding: 20px 0;
+                }
+
+                &:hover {
+                    background-color: $tomato-light;
+                    color: white;
+                }
+            }
+        }
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+    }
+
+    &__tools {
+
+        display: flex;
+        padding: 22px 0;
+
+        .search {
+            width: 36px;
+            height: 36px;
+            margin-right: 36px;
+        }
+
+        .user {
+            width: 36px;
+            height: 36px;
+        }
+
+        @include breakpoint(sm) {
+            padding: 20px 0;
+
+            .search {
+                width: 20px;
+                height: 20px;
+                margin-right: 15px;
+            }
+
+            .user {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        @include breakpoint(md) {
+            padding: 16px 0;
+
+            .search {
+                width: 27px;
+                height: 27px;
+                margin-right: 20px;
+            }
+
+            .user {
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @include breakpoint(sm) {
+            display: block;
+        }
+
+    }
+}
+
+.baner__carousel {
+
+    .baner__element {
+        width: 100%;
+        position: relative;
+
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            height: 100%;
+        }
+
+        .cta {
+            width: 400px;
+            text-align: center;
+            margin: 120px 0 368px;
+
+            @include breakpoint(sm) {
+                width: 210px;
+                margin: 60px 0 200px;
+            }
+
+            @include breakpoint(md) {
+                width: 210px;
+                margin: 60px 0 200px;
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 61px;
+                text-transform: uppercase;
+                color: $brown-light;
+                margin-bottom: 50px;
+
+                @include breakpoint(sm) {
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+
+                @include breakpoint(md) {
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+    }
+
+    .slick-dots {
+
+        bottom: 50px;
+
+        li {
+
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.slick-active {
+
+                button:before {
+                    color: $tomato-light;
+                    font-size: 20px;
+                    opacity: 1;
+                }
+
+            }
+
+            &:not(.slick-active) {
+                button:before {
+                    color: $dot-inactive;
+                    font-size: 20px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+.products {
+
+    padding: 70px 0;
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .products__carousel {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .products__slick-prev,
+    .products__slick-next {
+        width: 40px;
+        height: 74px;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+        @include breakpoint(md) {
+            width: 16px;
+            height: 30px;
+        }
+
+
+    }
+
+    &__slick-prev {
+        background-image: url(../images/left-arrow.svg);
+        left: -60px;
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+        @include breakpoint(md) {
+            right: -39px;
+        }
+    }
+
+    &__slick-next {
+        background-image: url(../images/next.svg);
+        right: -60px;
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+        @include breakpoint(md) {
+            right: -39px;
+        }
+    }
+
+    .products__title {
+        margin-bottom: 50px;
+    }
+
+    .products__carousel {
+
+        @include breakpoint(sm) {
+            max-width: 299px;
+        }
+
+        @include breakpoint(md) {
+            max-width: 704px;
+        }
+    }
+
+    .products__card {
+
+        .card__wrapper {
+            border: 1px solid $brown-light;
+            margin-right: 16px;
+
+
+            @include breakpoint(md) {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                border: 1px solid $tomato-light;
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                text-transform: uppercase;
+                color: $brown-light;
+                background-color: $tomato-light;
+                padding: 4px 5.5px;
+
+                &:hover {
+                    color: black;
+                    background-color: $brown-light;
+                }
+            }
+
+            .card__contents {
+                padding: 20px 10px;
+                display: flex;
+                flex-direction: column;
+
+                .description {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19.5px;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+
+                .price {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.partners {
+    padding: 70px 0;
+    background-color: $brown-light;
+
+    .container {
+        position: relative;
+    }
+
+    .partners__title {
+        margin-bottom: 40px;
+    }
+
+    .partners__item {
+        margin-right: 34px;
+
+        @include breakpoint(sm) {
+            margin-right: 34px;
+        }
+
+        @include breakpoint(md) {
+            margin-right: 24px;
+        }
+    }
+
+    .partners__slick-prev,
+    .partners__slick-next {
+        width: 40px;
+        height: 74px;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+
+        @include breakpoint(sm) {
+            display: none;
+        }
+
+        @include breakpoint(md) {
+            width: 16px;
+            height: 30px;
+        }
+
+    }
+
+    &__slick-prev {
+        background-image: url(../images/left-arrow.svg);
+        left: -75px;
+
+        @include breakpoint(md) {
+            left: -34px;
+        }
+    }
+
+    &__slick-next {
+        background-image: url(../images/next.svg);
+        right: -75px;
+
+        @include breakpoint(md) {
+            left: -34px;
+        }
+    }
+}
+
+.footer {
+    background-color: $brown-dark;
+    color: $brown-light;
+
+    .footer__info {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 100px;
+
+        @include breakpoint(sm) {
+            padding: 120px 90px;
+
+        }
+
+        @include breakpoint(md) {
+            padding: 52px 74px;
+        }
+
+        .footer__logo {
+            width: 150px;
+            margin-bottom: 35px;
+        }
+
+        .footer__nav {
+
+            ul li {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $brown-light;
+                    font-weight: 500;
+                    font-size: 20px;
+
+                    &:hover {
+                        color: $tomato-light;
+                    }
+                }
+            }
+        }
+
+
+        .footer__contacts {
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .socials__item {
+                margin: 51px 0 36px;
+
+                ul li {
+                    display: inline-block;
+                    margin-right: 35px;
+
+                    .item__icon {
+                        display: block;
+                    }
+
+                    .item__icon--hovered {
+                        display: none;
+                    }
+
+                    &:hover {
+
+                        .item__icon {
+                            display: none;
+                        }
+
+                        .item__icon--hovered {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            @include breakpoint(sm) {
+                align-items: flex-end;
+
+            }
+
+            @include breakpoint(md) {
+                
+            }
+
+        }
+
+    }
+
+    p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+}

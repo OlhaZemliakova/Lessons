@@ -1,0 +1,76 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include breakpoint(sm) {
+        max-width: 299px;
+    }
+
+    @include breakpoint(md) {
+        max-width: 738px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+
+    @include breakpoint(sm) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    @include breakpoint(md) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+    .button {
+        text-decoration: none;
+        background-color: transparent;
+        padding: 15px 57px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        @include breakpoint(sm) {
+            padding: 10px 26px;
+        }
+
+        @include breakpoint(md) {
+            padding: 10px 26px;
+        }
+
+        &-dark {
+            border: 2px solid black;
+            color: black;
+        }
+
+        &-light {
+            border: 2px solid $brown-light;
+            color: white;
+        }
+
+        &:hover {
+            background-color: $tomato-light;
+            border: 2px solid $tomato-light;
+            color: white;
+        }
+    }
