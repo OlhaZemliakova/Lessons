@@ -7,9 +7,17 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+
+    @include breakpoint(sm) {
+        max-width: 299px;
+    }
+
+    @include breakpoint(md) {
+        max-width: 738px;
+    }
 }
 
 a {
@@ -23,28 +31,46 @@ h2 {
     text-transform: uppercase;
     color: black;
     text-align: center;
-}
 
-.button {
-    text-decoration: none;
-    background-color: transparent;
-    padding: 15px 57px;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    &-dark {
-        border: 2px solid black;
-        color: black;
+    @include breakpoint(sm) {
+        font-size: 20px;
+        line-height: 25px;
     }
 
-    &-light {
-        border: 2px solid $brown-light;
-        color: white;
-    }
-
-    &:hover {
-        background-color: $tomato-light;
-        border: 2px solid $tomato-light;
-        color: white;
+    @include breakpoint(md) {
+        font-size: 20px;
+        line-height: 25px;
     }
 }
+
+    .button {
+        text-decoration: none;
+        background-color: transparent;
+        padding: 15px 57px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        @include breakpoint(sm) {
+            padding: 10px 26px;
+        }
+
+        @include breakpoint(md) {
+            padding: 10px 26px;
+        }
+
+        &-dark {
+            border: 2px solid black;
+            color: black;
+        }
+
+        &-light {
+            border: 2px solid $brown-light;
+            color: white;
+        }
+
+        &:hover {
+            background-color: $tomato-light;
+            border: 2px solid $tomato-light;
+            color: white;
+        }
+    }

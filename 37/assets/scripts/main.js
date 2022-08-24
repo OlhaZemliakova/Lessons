@@ -13,13 +13,33 @@ function banerSlider() {
 function productsSlider() {
   $('.products__carousel').slick({
     dots: false,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     adaptiveHeight: true,
     arrows: true,
     accessibility: true,
-    prevArrow: '.products__slick-prev',
-    nextArrow: '.products__slick-prev',
+    prevArrow: '.products__slick-next',
+    nextArrow: '.products__slick-next',
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      },
+    ]
   })
 }
 
@@ -33,6 +53,28 @@ function partnersSlider() {
     accessibility: true,
     prevArrow: '.partners__slick-prev',
     nextArrow: '.partners__slick-next',
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          infinite: true,
+          dots: true
+        }
+      },
+    ]
   })
 }
 
