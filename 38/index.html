@@ -10,10 +10,23 @@
 </head>
 
 <body>
-    <form>
-        <input type="text" placeholder="Enter the name of the movie">
-        <button type="search">Search</button>
-    </form>
+    <div class="search">
+        <input type="text" placeholder="Search" id="search">
+        <select id="type">
+            <option class="type__option" value="movie" selected>Movie</option>
+            <option class="type__option" value="series">Series</option>
+            <option class="type__option" value="episode">Episode</option>
+        </select>
+        <button id="search-button">
+            Search
+        </button>
+    </div>
+    <div class="search-result">
+        <ul id="search-result">
+        </ul>
+    </div>
+    <div id="details">
+    </div>
     <script src="assets/scripts/main.js"></script>
 </body>
 
