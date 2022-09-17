@@ -1,15 +1,17 @@
 <template>
   <div>
-    <ul v-if="results?.length > 1">
-      <li
+    <v-list v-if="results?.length > 1" rounded>
+      <v-list-item-group v-model="model" color="cyan" class="headline font-weight-bold">
+        <v-list-item
         v-for="item in results"
         v-bind:key="item.id"
         @click="showDetails(item.id)"
       >
         {{ item.title }}
-      </li>
-    </ul>
-    <p v-else>Not found!</p>
+      </v-list-item>
+      </v-list-item-group>
+    </v-list>
+    <p v-else class="error">Not found!</p>
     <div class="text-center">   
       <v-dialog v-model="dialog" width="500">
         <DetailsComponent @close="dialog = false" :details="details" />
@@ -49,4 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .v-list {
+    opacity: 0.8;
+  }
 </style>

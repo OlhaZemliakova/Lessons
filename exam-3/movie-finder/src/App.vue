@@ -1,17 +1,29 @@
 <template>
   <div id="app">
     <v-app>
-      <v-container fluid>
-        <img width="100" alt="Vue logo" src="./assets/logotmdb.svg" />
-        <SearchComponent @submit="handleSearch" />
-        <SearchResultsComponent v-if="state.results" :results="state.results" />
-        <PaginationComponent
-          v-if="state.total_pages > 1"
-          @set-page="handlePagination"
-          :currentPage="state.page"
-          :totalPages="state.total_pages"
-        />
-      </v-container>
+      <v-app-bar app dark padless>
+        <img width="200" alt="Vue logo" src="./assets/logotmdb.svg" />
+      </v-app-bar>
+      <v-main>
+        <v-container fluid>
+          <v-card-text style="text-align: start">
+            <h2 class="display-3 font-weight-bold">Welcome.</h2>
+            <h3 class="display-2">Millions of movies, TV shows to discover. Explore now.</h3>
+          </v-card-text>
+          <SearchComponent @submit="handleSearch" />
+          <SearchResultsComponent
+            v-if="state.results"
+            :results="state.results"
+          />
+          <PaginationComponent
+            v-if="state.total_pages > 1"
+            @set-page="handlePagination"
+            :currentPage="state.page"
+            :totalPages="state.total_pages"
+          />
+        </v-container>
+      </v-main>
+      <FooterComponent />
     </v-app>
   </div>
 </template>
@@ -21,6 +33,7 @@ import SearchComponent from "./components/SearchComponent.vue";
 import api from "./api";
 import SearchResultsComponent from "./components/SearchResultsComponent.vue";
 import PaginationComponent from "./components/PaginationComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
@@ -28,6 +41,7 @@ export default {
     SearchComponent,
     SearchResultsComponent,
     PaginationComponent,
+    FooterComponent,
   },
   data: () => ({
     requestParams: {
@@ -72,7 +86,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+}
+.v-main {
+  background-image: url("assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
 }
 </style>

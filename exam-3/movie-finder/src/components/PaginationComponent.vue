@@ -12,6 +12,7 @@
               prev-icon="mdi-menu-left"
               next-icon="mdi-menu-right"
               @input="handlePageChange"
+              color="cyan"
             ></v-pagination>
           </v-container>
         </v-col>

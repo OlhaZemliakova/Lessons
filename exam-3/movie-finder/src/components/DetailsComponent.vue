@@ -3,7 +3,7 @@
     <v-card-title class="text-h5 grey lighten-2">
       {{ details.title }}
     </v-card-title>
-    <img :src="'https://image.tmdb.org/t/p/original' + details.poster_path" alt="" style='width: 100%'/>
+    <img :src="'https://image.tmdb.org/t/p/original' + details.poster_path" alt="poster" style='width: 100%'/>
     <v-card-text>
       {{ details.overview }}
     </v-card-text>
@@ -12,7 +12,7 @@
 
     <v-card-actions>
       <v-spacer></v-spacer>
-      <v-btn color="primary" text @click="close"> Close </v-btn>
+      <v-btn color="cyan" text @click="close"> Close </v-btn>
     </v-card-actions>
   </v-card>
 </template>
