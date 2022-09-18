@@ -1,4 +1,4 @@
-# wallheven
+# movie-finder
 
 ## Project setup
 ```
