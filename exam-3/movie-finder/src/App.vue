@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <v-app>
-      <v-app-bar app dark padless>
-        <img width="200" alt="Vue logo" src="./assets/logotmdb.svg" />
+      <v-app-bar app dark padless class="pl-4">
+        <img width="200" alt="logo" src="./assets/logotmdb.svg" />
       </v-app-bar>
       <v-main>
         <v-container fluid>

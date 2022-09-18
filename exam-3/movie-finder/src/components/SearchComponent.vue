@@ -2,24 +2,25 @@
   <v-container fluid>
     <v-row align="center">
       <v-col class="d-flex" cols="12" sm="12" md="12" lg="12">
-        <v-text-field class="input"
-        v-model="form.query"
+        <v-text-field
+          class="input"
+          v-model="form.query"
           label="Search movie"
-          placeholder="Search movie..."
+          placeholder="Enter the title of the movie"
           outlined
           rounded
           solo
         ></v-text-field>
         <v-btn
-        @click="submit"
-        accent
-        elevation="7"
-        x-large
-        rounded
-        color="cyan"
-        class="white--text ml-5"
-        >Search</v-btn
-      >
+          @click="submit"
+          accent
+          elevation="7"
+          x-large
+          rounded
+          color="cyan"
+          class="white--text ml-5"
+          >Search</v-btn
+        >
       </v-col>
       <v-col class="d-flex" cols="12" sm="12" md="6" lg="3">
         <v-select
@@ -67,8 +68,29 @@ export default {
       "2015",
       "2014",
       "2013",
+      "2012",
+      "2011",
+      "2010",
+      "2009",
+      "2008",
+      "2007",
+      "2006",
+      "2005",
+      "2003",
+      "2002",
+      "2001",
+      "2000",
     ],
-    genre: ["comedy", "drama", "action", "thriller"],
+    genre: [
+      "Comedy",
+      "Drama",
+      "Action",
+      "Thriller",
+      "Western",
+      "Adventure",
+      "Animated",
+      "Fantasy",
+    ],
     rating: ["asc", "desc"],
     form: {
       query: "",
@@ -92,7 +114,7 @@ export default {
 </script>
 
 <style>
-  .input {
-    opacity: 0.8;
-  }
+.input {
+  opacity: 0.8;
+}
 </style>
