@@ -8,8 +8,7 @@
           label="Search movie"
           placeholder="Enter the title of the movie"
           outlined
-          solo-inverted
-          dark
+          solo
           rounded
         ></v-text-field>
       </v-col>
@@ -20,19 +19,20 @@
           label="Year"
           solo
           rounded
-          solo-inverted
-          dark
+          full-width
+          class="select"
         ></v-select>
       </v-col>
       <v-col cols="12" lg="2" sm="2">
         <v-btn
           @click="submit"
-          accent
           elevation="7"
           large
           rounded
+          solo-inverted
           color="cyan"
           class="white--text"
+          x-large
           >Search</v-btn
         >
       </v-col>
@@ -91,6 +91,9 @@ export default {
 
 <style>
 .input {
+  opacity: 0.8;
+}
+.select {
   opacity: 0.8;
 }
 </style>
