@@ -1,50 +1,40 @@
 <template>
   <v-container fluid>
-    <v-row align="center">
-      <v-col class="d-flex" cols="12" sm="12" md="12" lg="12">
+    <v-row>
+      <v-col cols="12" lg="8" sm="8">
         <v-text-field
           class="input"
           v-model="form.query"
           label="Search movie"
           placeholder="Enter the title of the movie"
           outlined
+          solo-inverted
+          dark
           rounded
-          solo
         ></v-text-field>
-        <v-btn
-          @click="submit"
-          accent
-          elevation="7"
-          x-large
-          rounded
-          color="cyan"
-          class="white--text ml-5"
-          >Search</v-btn
-        >
       </v-col>
-      <v-col class="d-flex" cols="12" sm="12" md="6" lg="3">
+      <v-col cols="12" lg="2" sm="2">
         <v-select
           v-model="form.year"
           :items="year"
           label="Year"
           solo
+          rounded
+          solo-inverted
+          dark
         ></v-select>
       </v-col>
-      <v-col class="d-flex" cols="12" sm="12" md="6" lg="3">
-        <v-select
-          v-model="form.genre"
-          :items="genre"
-          label="Genre"
-          solo
-        ></v-select>
-      </v-col>
-      <v-col class="d-flex" cols="12" sm="12" md="6" lg="3">
-        <v-select
-          v-model="form.rating"
-          :items="rating"
-          label="Rating"
-          solo
-        ></v-select>
+      <v-col cols="12" lg="2" sm="2">
+        <v-btn
+          @click="submit"
+          accent
+          elevation="7"
+          large
+          rounded
+          color="cyan"
+          class="white--text"
+          >Search</v-btn
+        >
       </v-col>
     </v-row>
   </v-container>
@@ -58,6 +48,7 @@ export default {
   },
   data: () => ({
     year: [
+      { text: "year", value: "" },
       "2022",
       "2021",
       "2020",
@@ -81,22 +72,9 @@ export default {
       "2001",
       "2000",
     ],
-    genre: [
-      "Comedy",
-      "Drama",
-      "Action",
-      "Thriller",
-      "Western",
-      "Adventure",
-      "Animated",
-      "Fantasy",
-    ],
-    rating: ["asc", "desc"],
     form: {
       query: "",
       year: "",
-      genre: "",
-      rating: "",
     },
   }),
   methods: {
@@ -105,8 +83,6 @@ export default {
       this.$emit("submit", {
         query: this.form.query,
         year: this.form.year,
-        genre: this.form.genre,
-        rating: this.form.rating,
       });
     },
   },

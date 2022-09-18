@@ -1,9 +1,9 @@
 <template>
   <v-card>
-    <v-card-title class="text-h5 grey lighten-2">
+    <v-card-title class="text-h5 lighten-2">
       {{ details.title }}
     </v-card-title>
-    <img :src="'https://image.tmdb.org/t/p/original' + details.poster_path" alt="poster" style='width: 80%'/>
+    <img :src="'https://image.tmdb.org/t/p/original' + details.poster_path" alt="poster" style='width: 100%'/>
     <v-card-text>
       {{ details.overview }}
     </v-card-text>

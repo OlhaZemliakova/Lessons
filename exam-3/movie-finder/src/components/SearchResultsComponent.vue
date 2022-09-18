@@ -1,18 +1,29 @@
 <template>
   <div>
-    <v-list v-if="results?.length > 1" rounded>
-      <v-list-item-group v-model="model" color="cyan" class="headline font-weight-bold">
-        <v-list-item
+    <v-list three-line v-if="results?.length > 1">
+      <v-list-item
         v-for="item in results"
         v-bind:key="item.id"
         @click="showDetails(item.id)"
+        class="mb-8"
       >
-        {{ item.title }}
+        <v-img
+          :src="
+            'https://image.tmdb.org/t/p/w94_and_h141_bestv2' + item.poster_path
+          "
+          alt="poster"
+          max-width="94"
+          class="mr-4"
+        >
+        </v-img>
+        <v-list-item-content class="text-left">
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-subtitle>{{ item.release_date }}</v-list-item-subtitle>
+        </v-list-item-content>
       </v-list-item>
-      </v-list-item-group>
     </v-list>
     <p v-else class="error">Not found!</p>
-    <div class="text-center">   
+    <div class="text-center">
       <v-dialog v-model="dialog" width="500">
         <DetailsComponent @close="dialog = false" :details="details" />
       </v-dialog>
@@ -51,7 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .v-list {
-    opacity: 0.8;
-  }
+.v-list {
+  opacity: 0.8;
+}
 </style>
