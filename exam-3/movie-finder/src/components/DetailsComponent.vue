@@ -3,7 +3,7 @@
     <v-card-title class="text-h5 lighten-2">
       {{ details.title }}
     </v-card-title>
-    <img :src="'https://image.tmdb.org/t/p/original' + details.poster_path" alt="poster" style='width: 80%'/>
+    <img :src="'https://image.tmdb.org/t/p/original' + details.poster_path" alt="poster" style='width: 95%'/>
     <v-card-text>
       {{ details.overview }}
     </v-card-text>
@@ -29,7 +29,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>
