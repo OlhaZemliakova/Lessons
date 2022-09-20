@@ -47,8 +47,6 @@ export default {
     requestParams: {
       query: "",
       year: "",
-      genre: "",
-      rating: "",
       page: 1,
     },
     state: {},

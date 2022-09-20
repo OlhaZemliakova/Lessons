@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row>
-      <v-col cols="12" lg="8" sm="8">
+      <v-col cols="12" lg="8">
         <v-text-field
           class="input"
           v-model="form.query"
@@ -12,7 +12,7 @@
           rounded
         ></v-text-field>
       </v-col>
-      <v-col cols="12" lg="2" sm="2">
+      <v-col cols="12" lg="2" md="6">
         <v-select
           v-model="form.year"
           :items="year"
@@ -23,7 +23,7 @@
           class="select"
         ></v-select>
       </v-col>
-      <v-col cols="12" lg="2" sm="2">
+      <v-col cols="12" lg="2" md="2">
         <v-btn
           @click="submit"
           elevation="7"
@@ -71,6 +71,16 @@ export default {
       "2002",
       "2001",
       "2000",
+      "1999",
+      "1998",
+      "1997",
+      "1996",
+      "1995",
+      "1994",
+      "1993",
+      "1992",
+      "1991",
+      "1990"
     ],
     form: {
       query: "",
