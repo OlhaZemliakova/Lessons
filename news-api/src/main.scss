@@ -1,0 +1,7 @@
+@use 'vuetify' with (
+  $utilities: 'true',
+  $color-pack: true,
+  $reset: true,
+);
+
+// @import '../node_modules/vuetify/lib/styles/generic/reset';
