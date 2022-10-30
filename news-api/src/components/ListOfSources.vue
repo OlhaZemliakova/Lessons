@@ -8,7 +8,11 @@
       sm="6"
       xs="12"
     >
-      <v-card variant="tonal" style="max-height: 350px; height: 100%" class="column">
+      <v-card
+        variant="tonal"
+        style="max-height: 350px; height: 100%"
+        class="column"
+      >
         <v-card-title> {{ item.name }} </v-card-title>
         <v-card-subtitle> Category: {{ item.category }} </v-card-subtitle>
         <v-card-text> {{ item.description }} </v-card-text>
